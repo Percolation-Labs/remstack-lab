@@ -11,12 +11,34 @@ Example datasets, experiments, and tutorials for [remdb](https://pypi.org/projec
 
 ### Prerequisites
 
+**System Dependencies:**
+
 ```bash
-# Install remdb
-pip install remdb[all]
+# macOS
+brew install tesseract
+
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install tesseract-ocr
+
+# Fedora/RHEL
+sudo dnf install tesseract
+
+# Windows (using Chocolatey)
+choco install tesseract
+```
+
+**Python Package:**
+
+```bash
+# Install remdb (note: quotes required for zsh)
+pip install "remdb[all]"
 
 # Configure (interactive wizard)
 rem configure --install
+
+# Or non-interactive with defaults
+rem configure --yes --install
 ```
 
 ### Load Your First Dataset
@@ -36,7 +58,7 @@ docker run -d \
   pgvector/pgvector:pg18
 
 # Load quickstart dataset
-rem db load --file datasets/quickstart/sample_data.yaml --user-id demo-user
+rem db load datasets/quickstart/sample_data.yaml --user-id demo-user
 
 # Ask questions
 rem ask --user-id demo-user "What documents exist in the system?"
