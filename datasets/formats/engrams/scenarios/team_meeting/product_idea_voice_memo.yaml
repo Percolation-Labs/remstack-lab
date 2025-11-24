@@ -1,0 +1,63 @@
+kind: engram
+name: "Product Idea - LLM Query Caching"
+category: "note"
+summary: "Voice memo about implementing semantic caching for LLM queries to reduce costs"
+resource_timestamp: "2025-11-19T08:15:00Z"
+uri: "s3://acme-recordings/2025/11/19/commute-voice-memo.m4a"
+metadata:
+  device:
+    imei: "352099001761481"
+    model: "iPhone 15 Pro"
+    os: "iOS 18.1"
+    app: "Voice Memos"
+    location:
+      latitude: 37.7749
+      longitude: -122.4194
+      accuracy: 10.5
+      altitude: 52.3
+      speed: 45.5
+      heading: 180.0
+    network:
+      type: "cellular"
+      carrier: "AT&T"
+      signal_strength: -75
+  capture_context: "commute"
+  idea_category: "product_feature"
+content: |
+  Had an idea during the commute - we could implement semantic caching for
+  LLM queries in the REM system. When users ask similar questions, we could
+  check if we have a semantically similar query in cache and return that
+  result instead of hitting the LLM API again.
+
+  Implementation thoughts:
+  - Use pgvector to store query embeddings
+  - Set similarity threshold at 0.95 for cache hits
+  - Store original query, embedding, response, and timestamp
+  - Add cache TTL of 24 hours for freshness
+  - Include tenant_id and user_id for isolation
+
+  Potential cost savings could be huge - we're seeing lots of repeated
+  questions like "Show me API documentation" or "What did we discuss in
+  the last standup?"
+
+  This would integrate nicely with the existing embedding pipeline.
+  Just need to add a cache lookup step before the LLM call.
+
+graph_edges:
+  - dst: "API Design Document v2"
+    rel_type: "builds_on"
+    weight: 0.75
+    properties:
+      dst_name: "API Design Document v2"
+      dst_entity_type: "resource/document"
+      match_type: "conceptual_extension"
+      confidence: 0.75
+
+  - dst: "Product Roadmap Q1 2025"
+    rel_type: "contributes_to"
+    weight: 0.8
+    properties:
+      dst_name: "Product Roadmap Q1 2025"
+      dst_entity_type: "resource/planning"
+      match_type: "strategic_alignment"
+      confidence: 0.8

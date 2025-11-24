@@ -1,0 +1,134 @@
+kind: engram
+name: "Daily Team Standup - Nov 18"
+category: "meeting"
+summary: "Daily standup discussing sprint progress, API improvements, and blockers"
+resource_timestamp: "2025-11-18T09:00:00Z"
+uri: "s3://acme-recordings/2025/11/18/standup.m4a"
+metadata:
+  device:
+    model: "MacBook Pro"
+    app: "Zoom"
+    version: "5.16.0"
+  meeting_type: "standup"
+  department: "engineering"
+content: |
+  Daily standup meeting with the engineering team. Discussed sprint progress,
+  identified two blockers, and planned pairing sessions for the afternoon.
+
+  Key discussion points:
+  - API rate limiting improvements completed
+  - Database migration testing in progress
+  - Frontend component refactor blocked on API changes
+
+  Team morale is high, velocity is good for this sprint.
+
+graph_edges:
+  - dst: "Sarah Chen"
+    rel_type: "attended_by"
+    weight: 1.0
+    properties:
+      dst_name: "Sarah Chen"
+      dst_entity_type: "person/engineer"
+      match_type: "explicit"
+      confidence: 1.0
+
+  - dst: "Mike Rodriguez"
+    rel_type: "attended_by"
+    weight: 1.0
+    properties:
+      dst_name: "Mike Rodriguez"
+      dst_entity_type: "person/engineer"
+      match_type: "explicit"
+      confidence: 1.0
+
+  - dst: "API Design Document v2"
+    rel_type: "discusses"
+    weight: 0.9
+    properties:
+      dst_name: "API Design Document v2"
+      dst_entity_type: "resource/document"
+      match_type: "topic_reference"
+      confidence: 0.9
+
+moments:
+  - name: "Sprint Progress Review"
+    content: "Sarah reviewed completed tickets and updated the burndown chart. Team completed 12 of 15 tickets this week."
+    summary: "Sprint progress update from Sarah - 12/15 tickets complete"
+    starts_timestamp: "2025-11-18T09:00:00Z"
+    ends_timestamp: "2025-11-18T09:05:00Z"
+    uri: "s3://acme-recordings/2025/11/18/standup.m4a#t=0,300"
+    moment_type: "status_update"
+    emotion_tags: ["focused", "productive", "optimistic"]
+    topic_tags: ["sprint-progress", "burndown", "velocity"]
+    present_persons:
+      - id: "sarah-chen"
+        name: "Sarah Chen"
+        comment: "VP Engineering"
+      - id: "mike-rodriguez"
+        name: "Mike Rodriguez"
+        comment: "Backend Engineer"
+    metadata:
+      tickets_completed: 12
+      tickets_remaining: 3
+
+  - name: "API Rate Limiting Discussion"
+    content: "Mike presented the completed API rate limiting feature using token bucket algorithm. Ready for production deployment."
+    summary: "API rate limiting implementation completed"
+    starts_timestamp: "2025-11-18T09:05:00Z"
+    ends_timestamp: "2025-11-18T09:10:00Z"
+    uri: "s3://acme-recordings/2025/11/18/standup.m4a#t=300,600"
+    moment_type: "technical_discussion"
+    emotion_tags: ["accomplished", "confident"]
+    topic_tags: ["api-rate-limiting", "token-bucket", "production-ready"]
+    present_persons:
+      - id: "sarah-chen"
+        name: "Sarah Chen"
+        comment: "VP Engineering"
+      - id: "mike-rodriguez"
+        name: "Mike Rodriguez"
+        comment: "Backend Engineer"
+    speakers:
+      - text: "The token bucket implementation is complete with Redis backing"
+        speaker_identifier: "Mike Rodriguez"
+        timestamp: "2025-11-18T09:05:30Z"
+        emotion: "confident"
+      - text: "Great work! Let's deploy to staging today"
+        speaker_identifier: "Sarah Chen"
+        timestamp: "2025-11-18T09:06:00Z"
+        emotion: "supportive"
+    metadata:
+      feature_status: "completed"
+      deployment_target: "staging"
+    graph_edges:
+      - dst: "API Design Document v2"
+        rel_type: "implements"
+        weight: 1.0
+        properties:
+          dst_name: "API Design Document v2"
+          dst_entity_type: "resource/document"
+          match_type: "explicit_reference"
+          confidence: 1.0
+
+  - name: "Database Migration Blocker"
+    content: "Team identified a blocker in database migration testing. Schema changes require additional testing time."
+    summary: "Database migration delayed - needs more testing"
+    starts_timestamp: "2025-11-18T09:10:00Z"
+    ends_timestamp: "2025-11-18T09:15:00Z"
+    uri: "s3://acme-recordings/2025/11/18/standup.m4a#t=600,900"
+    moment_type: "problem_identification"
+    emotion_tags: ["concerned", "collaborative"]
+    topic_tags: ["database-migration", "testing", "blocker"]
+    present_persons:
+      - id: "sarah-chen"
+        name: "Sarah Chen"
+        comment: "VP Engineering"
+      - id: "mike-rodriguez"
+        name: "Mike Rodriguez"
+        comment: "Backend Engineer"
+    metadata:
+      blocker_severity: "medium"
+      estimated_delay: "2 days"
+      action_items:
+        - "Review migration scripts"
+        - "Add rollback tests"
+        - "Schedule pairing session"
