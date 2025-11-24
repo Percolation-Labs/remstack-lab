@@ -2,7 +2,7 @@ kind: engram
 name: "Product Idea - LLM Query Caching"
 category: "note"
 summary: "Voice memo about implementing semantic caching for LLM queries to reduce costs"
-resource_timestamp: "2025-11-19T08:15:00Z"
+timestamp: "2025-11-19T08:15:00Z"
 uri: "s3://acme-recordings/2025/11/19/commute-voice-memo.m4a"
 metadata:
   device:

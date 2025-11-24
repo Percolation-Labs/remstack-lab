@@ -2,7 +2,7 @@ kind: engram
 name: "Daily Team Standup - Nov 18"
 category: "meeting"
 summary: "Daily standup discussing sprint progress, API improvements, and blockers"
-resource_timestamp: "2025-11-18T09:00:00Z"
+timestamp: "2025-11-18T09:00:00Z"
 uri: "s3://acme-recordings/2025/11/18/standup.m4a"
 metadata:
   device:

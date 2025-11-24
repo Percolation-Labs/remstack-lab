@@ -2,7 +2,7 @@ kind: engram
 name: "Engineering Team Standup - Monday Nov 18"
 category: "daily-standup"
 summary: "Sprint kickoff standup discussing API rate limiting, database migration, and frontend refactor"
-resource_timestamp: "2024-11-18T09:00:00"
+timestamp: "2024-11-18T09:00:00"
 uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a"
 metadata:
   team: "Engineering"

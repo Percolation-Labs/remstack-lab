@@ -2,7 +2,7 @@ kind: engram
 name: "Technical Interview - Sarah Chen - Backend Engineer"
 category: "technical-interview"
 summary: "System design interview focused on distributed systems, database scaling, and API design"
-resource_timestamp: "2024-11-20T14:00:00"
+timestamp: "2024-11-20T14:00:00"
 uri: "s3://recruitment-recordings/2024/11/sarah-chen-technical.m4a"
 metadata:
   candidate: "Sarah Chen"

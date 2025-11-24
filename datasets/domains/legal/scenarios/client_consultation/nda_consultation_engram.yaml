@@ -2,7 +2,7 @@ kind: engram
 name: "NDA Review Consultation - Acme Corp"
 category: "legal-consultation"
 summary: "Client consultation reviewing NDA terms, mutual confidentiality clauses, and term duration"
-resource_timestamp: "2024-11-15T14:00:00"
+timestamp: "2024-11-15T14:00:00"
 uri: "s3://legal-recordings/2024/11/acme-nda-consultation.m4a"
 metadata:
   client: "Acme Corp"

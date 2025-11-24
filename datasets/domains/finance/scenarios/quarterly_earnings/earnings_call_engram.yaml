@@ -2,7 +2,7 @@ kind: engram
 name: "TechVentures Q3 2024 Earnings Call"
 category: "earnings-call"
 summary: "Quarterly earnings call with strong results, 28% revenue growth, expanding margins, and optimistic guidance"
-resource_timestamp: "2024-10-24T16:30:00"
+timestamp: "2024-10-24T16:30:00"
 uri: "s3://finance-recordings/2024/q3/techventures-earnings-call.m4a"
 metadata:
   company: "TechVentures Inc"

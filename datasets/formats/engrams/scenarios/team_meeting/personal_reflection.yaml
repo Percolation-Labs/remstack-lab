@@ -2,7 +2,7 @@ kind: engram
 name: "Evening Reflection - Work-Life Balance"
 category: "diary"
 summary: "Personal reflection on work week, accomplishments, and weekend plans"
-resource_timestamp: "2025-11-18T20:30:00Z"
+timestamp: "2025-11-18T20:30:00Z"
 metadata:
   device:
     model: "MacBook Pro"
