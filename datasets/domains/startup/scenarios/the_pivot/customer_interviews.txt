@@ -1,0 +1,23 @@
+Customer Interview Notes - Batch 4
+Date: February 10, 2025
+Interviewer: Alice Voronina
+
+---
+User: Sarah J. (Dog owner, Golden Retriever)
+Feedback:
+"Honestly, I don't need another social network. I have Instagram for my dog photos. I don't use the 'Sniff' feature at all."
+"But... that little tool you added in the settings? The one that auto-schedules my vet appointments based on the vaccination records? THAT IS AMAZING. I would pay $20/month just for that."
+
+---
+User: Mike T. (Cat owner, 3 cats)
+Feedback:
+"The app is buggy. The feed is empty. But I uploaded my cat's medical history to the 'Vault' feature and it saved me when I had to go to the emergency vet at 2 AM. Can you make that the main app?"
+
+---
+User: Dr. Emily Chen (Veterinarian)
+Feedback:
+"I wish my clients used a system like this. Pawsible's social features are noise, but the record-keeping API is cleaner than what we use at the clinic."
+
+---
+KEY INSIGHT:
+Everyone hates the social network. Everyone loves the medical record automation.

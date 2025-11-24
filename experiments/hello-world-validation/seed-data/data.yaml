@@ -1,0 +1,14 @@
+users:
+  - id: test-user-001
+    user_id: hello-world-test
+    email: hello@example.com
+    name: Hello User
+
+resources:
+  - id: resource-001
+    user_id: hello-world-test
+    label: welcome-doc
+    kind: document
+    content: "# Welcome\n\nThis is a test resource for the hello world experiment."
+    tags: [test, documentation]
+    timestamp: "2024-01-01T00:00:00"

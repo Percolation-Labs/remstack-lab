@@ -1,12 +1,12 @@
 kind: engram
-name: "Engineering Team Standup - Monday Nov 18"
+name: "Engineering Team Standup - Monday Feb 17"
 category: "daily-standup"
 summary: "Sprint kickoff standup discussing API rate limiting, database migration, and frontend refactor"
-timestamp: "2024-11-18T09:00:00"
-uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a"
+timestamp: "2025-02-17T09:00:00"
+uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a"
 metadata:
   team: "Engineering"
-  sprint: "Sprint 24"
+  sprint: "Sprint 28"
   sprint_day: 1
   participant_count: 5
   duration_minutes: 15
@@ -20,7 +20,7 @@ content: |
   Team discussed weekend deployments, sprint goals, and blockers.
   Key focus areas: API rate limiting completion, database migration prep, frontend component refactor.
 
-  Overall team morale is high, velocity tracking well for sprint 24.
+  Overall team morale is high, velocity tracking well for sprint 28.
 
 graph_edges:
   - dst: "Engineering Team"
@@ -42,9 +42,9 @@ moments:
   - name: "Weekend Deployment Review"
     content: "Sarah reviewed successful production deployment over the weekend. Auth service upgrade completed without incidents."
     summary: "Successful weekend production deployment review"
-    starts_timestamp: "2024-11-18T09:00:00"
-    ends_timestamp: "2024-11-18T09:03:00"
-    uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a#t=0,180"
+    starts_timestamp: "2025-02-17T09:00:00"
+    ends_timestamp: "2025-02-17T09:03:00"
+    uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a#t=0,180"
     moment_type: "status_update"
     emotion_tags: ["relieved", "satisfied"]
     topic_tags: ["deployment", "production", "auth-service"]
@@ -67,11 +67,11 @@ moments:
     speakers:
       - text: "Weekend deployment went smoothly. Auth service v2.1 is live with zero downtime."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-18T09:00:30"
+        timestamp: "2025-02-17T09:00:30"
         emotion: "satisfied"
       - text: "Great work Carlos on the blue-green deployment execution."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-18T09:01:15"
+        timestamp: "2025-02-17T09:01:15"
         emotion: "appreciative"
     metadata:
       deployment_status: "success"
@@ -82,9 +82,9 @@ moments:
   - name: "Mike's Update - API Rate Limiting"
     content: "Mike completed token bucket implementation with Redis backing. Ready for production deployment this week."
     summary: "API rate limiting feature completed and ready for production"
-    starts_timestamp: "2024-11-18T09:03:00"
-    ends_timestamp: "2024-11-18T09:06:00"
-    uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a#t=180,360"
+    starts_timestamp: "2025-02-17T09:03:00"
+    ends_timestamp: "2025-02-17T09:06:00"
+    uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a#t=180,360"
     moment_type: "individual_update"
     emotion_tags: ["accomplished", "confident"]
     topic_tags: ["api-rate-limiting", "token-bucket", "redis", "production-ready"]
@@ -98,15 +98,15 @@ moments:
     speakers:
       - text: "I finished the token bucket implementation. It's backed by Redis and handles burst traffic elegantly."
         speaker_identifier: "Mike Rodriguez"
-        timestamp: "2024-11-18T09:03:30"
+        timestamp: "2025-02-17T09:03:30"
         emotion: "proud"
       - text: "Load tests look great - 100k requests per second with sub-10ms latency on rate limit checks."
         speaker_identifier: "Mike Rodriguez"
-        timestamp: "2024-11-18T09:04:30"
+        timestamp: "2025-02-17T09:04:30"
         emotion: "confident"
       - text: "Ready for staging deployment today, production Wednesday if QA passes."
         speaker_identifier: "Mike Rodriguez"
-        timestamp: "2024-11-18T09:05:15"
+        timestamp: "2025-02-17T09:05:15"
         emotion: "confident"
     metadata:
       feature: "api-rate-limiting"
@@ -114,8 +114,8 @@ moments:
       backing_store: "redis"
       performance_rps: 100000
       latency_ms: "<10"
-      staging_deploy_date: "2024-11-18"
-      production_deploy_date: "2024-11-20"
+      staging_deploy_date: "2025-02-17"
+      production_deploy_date: "2025-02-19"
     graph_edges:
       - dst: "API Design Document v2"
         rel_type: "implements"
@@ -127,9 +127,9 @@ moments:
   - name: "Jessica's Update - Database Migration Prep"
     content: "Jessica working on PostgreSQL 17 to 18 migration scripts. Needs additional testing time for schema changes."
     summary: "Database migration in progress, needs more testing"
-    starts_timestamp: "2024-11-18T09:06:00"
-    ends_timestamp: "2024-11-18T09:09:00"
-    uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a#t=360,540"
+    starts_timestamp: "2025-02-17T09:06:00"
+    ends_timestamp: "2025-02-17T09:09:00"
+    uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a#t=360,540"
     moment_type: "individual_update"
     emotion_tags: ["concerned", "diligent"]
     topic_tags: ["database-migration", "postgresql", "testing", "schema-changes"]
@@ -143,19 +143,19 @@ moments:
     speakers:
       - text: "I'm working on the PostgreSQL upgrade from 17 to 18. Migration scripts are ready but need more testing."
         speaker_identifier: "Jessica Patel"
-        timestamp: "2024-11-18T09:06:15"
+        timestamp: "2025-02-17T09:06:15"
         emotion: "focused"
       - text: "The pgvector extension upgrade has some schema changes I want to validate thoroughly."
         speaker_identifier: "Jessica Patel"
-        timestamp: "2024-11-18T09:07:00"
+        timestamp: "2025-02-17T09:07:00"
         emotion: "concerned"
       - text: "Planning to pair with Carlos tomorrow on rollback procedures."
         speaker_identifier: "Jessica Patel"
-        timestamp: "2024-11-18T09:08:00"
+        timestamp: "2025-02-17T09:08:00"
         emotion: "collaborative"
       - text: "Good call on the extra testing. Let's target end of week for staging migration."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-18T09:08:30"
+        timestamp: "2025-02-17T09:08:30"
         emotion: "supportive"
     metadata:
       task: "postgresql-upgrade"
@@ -164,15 +164,15 @@ moments:
       migration_scripts_status: "complete"
       testing_status: "in-progress"
       blocker: "schema-validation"
-      pair_session_scheduled: "2024-11-19"
-      target_staging_date: "2024-11-22"
+      pair_session_scheduled: "2025-02-18"
+      target_staging_date: "2025-02-21"
 
   - name: "Alex's Update - Frontend Refactor"
     content: "Alex refactoring auth components blocked on API changes. Coordinating with Mike for interface finalization."
     summary: "Frontend refactor blocked on API changes"
-    starts_timestamp: "2024-11-18T09:09:00"
-    ends_timestamp: "2024-11-18T09:12:00"
-    uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a#t=540,720"
+    starts_timestamp: "2025-02-17T09:09:00"
+    ends_timestamp: "2025-02-17T09:12:00"
+    uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a#t=540,720"
     moment_type: "individual_update"
     emotion_tags: ["blocked", "collaborative"]
     topic_tags: ["frontend", "refactor", "auth-components", "dependency"]
@@ -189,19 +189,19 @@ moments:
     speakers:
       - text: "I'm refactoring the auth components to use React Context instead of Redux. Blocked on Mike's API changes."
         speaker_identifier: "Alex Kim"
-        timestamp: "2024-11-18T09:09:15"
+        timestamp: "2025-02-17T09:09:15"
         emotion: "blocked"
       - text: "The new token refresh endpoint isn't finalized yet. Need to sync with Mike today."
         speaker_identifier: "Alex Kim"
-        timestamp: "2024-11-18T09:10:00"
+        timestamp: "2025-02-17T09:10:00"
         emotion: "waiting"
       - text: "Let's do a quick sync at 2pm today. I can share the new API contract."
         speaker_identifier: "Mike Rodriguez"
-        timestamp: "2024-11-18T09:10:45"
+        timestamp: "2025-02-17T09:10:45"
         emotion: "helpful"
       - text: "Perfect. Once I have the contract I can unblock and finish by Wednesday."
         speaker_identifier: "Alex Kim"
-        timestamp: "2024-11-18T09:11:15"
+        timestamp: "2025-02-17T09:11:15"
         emotion: "relieved"
     metadata:
       task: "auth-components-refactor"
@@ -209,22 +209,22 @@ moments:
       to_pattern: "react-context"
       blocker: "api-contract-not-finalized"
       blocking_dependency: "token-refresh-endpoint"
-      sync_scheduled: "2024-11-18T14:00:00"
-      estimated_completion: "2024-11-20"
+      sync_scheduled: "2025-02-17T14:00:00"
+      estimated_completion: "2025-02-19"
     graph_edges:
       - dst: "mike-rodriguez"
         rel_type: "blocked_by"
         weight: 0.9
         properties:
           blocker_type: "dependency"
-          resolution_scheduled: "2024-11-18T14:00:00"
+          resolution_scheduled: "2025-02-17T14:00:00"
 
   - name: "Carlos's Update - Infrastructure Monitoring"
     content: "Carlos implementing Prometheus metrics for new services. All green, no blockers."
     summary: "Infrastructure monitoring improvements on track"
-    starts_timestamp: "2024-11-18T09:12:00"
-    ends_timestamp: "2024-11-18T09:14:00"
-    uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a#t=720,840"
+    starts_timestamp: "2025-02-17T09:12:00"
+    ends_timestamp: "2025-02-17T09:14:00"
+    uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a#t=720,840"
     moment_type: "individual_update"
     emotion_tags: ["focused", "systematic"]
     topic_tags: ["infrastructure", "monitoring", "prometheus", "metrics"]
@@ -238,29 +238,29 @@ moments:
     speakers:
       - text: "I'm adding Prometheus metrics for the new services Mike deployed. Custom dashboards are ready."
         speaker_identifier: "Carlos Santos"
-        timestamp: "2024-11-18T09:12:15"
+        timestamp: "2025-02-17T09:12:15"
         emotion: "systematic"
       - text: "Also setting up alerting for P95 latency thresholds and error rates."
         speaker_identifier: "Carlos Santos"
-        timestamp: "2024-11-18T09:13:00"
+        timestamp: "2025-02-17T09:13:00"
         emotion: "diligent"
       - text: "No blockers. Should be done by end of day."
         speaker_identifier: "Carlos Santos"
-        timestamp: "2024-11-18T09:13:30"
+        timestamp: "2025-02-17T09:13:30"
         emotion: "confident"
     metadata:
       task: "prometheus-metrics"
       services_instrumented: ["auth-service", "rate-limiter"]
       dashboards_status: "complete"
       alerts_configured: ["p95-latency", "error-rate"]
-      estimated_completion: "2024-11-18"
+      estimated_completion: "2025-02-17"
 
   - name: "Sprint Goals Alignment"
-    content: "Sarah recapped sprint 24 goals and confirmed team has clarity on priorities."
+    content: "Sarah recapped sprint 28 goals and confirmed team has clarity on priorities."
     summary: "Sprint goals confirmed and aligned"
-    starts_timestamp: "2024-11-18T09:14:00"
-    ends_timestamp: "2024-11-18T09:15:00"
-    uri: "s3://enterprise-recordings/2024/11/18/standup-monday.m4a#t=840,900"
+    starts_timestamp: "2025-02-17T09:14:00"
+    ends_timestamp: "2025-02-17T09:15:00"
+    uri: "s3://enterprise-recordings/2025/02/17/standup-monday.m4a#t=840,900"
     moment_type: "wrap_up"
     emotion_tags: ["aligned", "motivated"]
     topic_tags: ["sprint-planning", "goals", "priorities"]
@@ -269,16 +269,16 @@ moments:
         name: "Sarah Chen"
         comment: "VP Engineering - Facilitator"
     speakers:
-      - text: "Great updates everyone. Our sprint 24 priorities are clear: ship rate limiting, prep database migration, unblock frontend."
+      - text: "Great updates everyone. Our sprint 28 priorities are clear: ship rate limiting, prep database migration, unblock frontend."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-18T09:14:15"
+        timestamp: "2025-02-17T09:14:15"
         emotion: "satisfied"
       - text: "Velocity looks good. Let's keep momentum going."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-18T09:14:45"
+        timestamp: "2025-02-17T09:14:45"
         emotion: "motivating"
     metadata:
-      sprint: "sprint-24"
+      sprint: "sprint-28"
       sprint_day: 1
       team_velocity: "on-track"
       priorities: ["rate-limiting-ship", "db-migration-prep", "frontend-unblock"]

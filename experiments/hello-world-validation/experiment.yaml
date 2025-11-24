@@ -1,0 +1,6 @@
+name: hello-world-validation
+description: Simple smoke test for basic agents to validate the experiment framework.
+agent: hello-world-agent
+evaluator: default
+tags: [smoke-test, validation]
+version: 1.0.0

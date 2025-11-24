@@ -2,8 +2,8 @@ kind: engram
 name: "NDA Review Consultation - Acme Corp"
 category: "legal-consultation"
 summary: "Client consultation reviewing NDA terms, mutual confidentiality clauses, and term duration"
-timestamp: "2024-11-15T14:00:00"
-uri: "s3://legal-recordings/2024/11/acme-nda-consultation.m4a"
+timestamp: "2025-02-14T14:00:00"
+uri: "s3://legal-recordings/2025/02/acme-nda-consultation.m4a"
 metadata:
   client: "Acme Corp"
   matter_type: "contract_review"
@@ -30,19 +30,19 @@ moments:
   - name: "NDA Terms Review"
     content: "Attorney reviewed proposed NDA terms including confidentiality scope, permitted disclosures, and exceptions."
     summary: "Detailed review of NDA confidentiality provisions"
-    starts_timestamp: "2024-11-15T14:00:00"
-    ends_timestamp: "2024-11-15T14:25:00"
+    starts_timestamp: "2025-02-14T14:00:00"
+    ends_timestamp: "2025-02-14T14:25:00"
     moment_type: "legal_analysis"
     emotion_tags: ["analytical", "cautious"]
     topic_tags: ["nda", "confidentiality", "contract-review"]
     speakers:
       - text: "The confidentiality definition is quite broad - 'any information disclosed' could be problematic."
         speaker_identifier: "Jennifer Wu"
-        timestamp: "2024-11-15T14:05:00"
+        timestamp: "2025-02-14T14:05:00"
         emotion: "concerned"
       - text: "We should add carve-outs for information you develop independently or receive from third parties."
         speaker_identifier: "Jennifer Wu"
-        timestamp: "2024-11-15T14:12:00"
+        timestamp: "2025-02-14T14:12:00"
         emotion: "advisory"
     metadata:
       issues_identified: 3
@@ -51,15 +51,15 @@ moments:
   - name: "Duration and Termination Discussion"
     content: "Discussed 3-year term duration and post-termination obligations including return of materials."
     summary: "Analysis of NDA term and termination clauses"
-    starts_timestamp: "2024-11-15T14:25:00"
-    ends_timestamp: "2024-11-15T14:40:00"
+    starts_timestamp: "2025-02-14T14:25:00"
+    ends_timestamp: "2025-02-14T14:40:00"
     moment_type: "legal_advice"
     emotion_tags: ["advisory", "protective"]
     topic_tags: ["contract-terms", "termination", "obligations"]
     speakers:
       - text: "Three years is standard for NDAs in your industry. The return of materials clause is reasonable."
         speaker_identifier: "Jennifer Wu"
-        timestamp: "2024-11-15T14:28:00"
+        timestamp: "2025-02-14T14:28:00"
         emotion: "reassuring"
     metadata:
       term_years: 3
@@ -68,16 +68,16 @@ moments:
   - name: "Next Steps and Action Items"
     content: "Attorney outlined redline changes to propose and next steps for negotiation."
     summary: "Action plan for NDA negotiation"
-    starts_timestamp: "2024-11-15T14:40:00"
-    ends_timestamp: "2024-11-15T14:50:00"
+    starts_timestamp: "2025-02-14T14:40:00"
+    ends_timestamp: "2025-02-14T14:50:00"
     moment_type: "action_planning"
     emotion_tags: ["directive", "helpful"]
     topic_tags: ["next-steps", "redlines", "negotiation"]
     speakers:
       - text: "I'll send you a redline with these five amendments by end of day."
         speaker_identifier: "Jennifer Wu"
-        timestamp: "2024-11-15T14:42:00"
+        timestamp: "2025-02-14T14:42:00"
         emotion: "helpful"
     metadata:
-      redline_due_date: "2024-11-15"
+      redline_due_date: "2025-02-14"
       amendments_count: 5

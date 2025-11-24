@@ -2,8 +2,8 @@ kind: engram
 name: "Technical Interview - Sarah Chen - Backend Engineer"
 category: "technical-interview"
 summary: "System design interview focused on distributed systems, database scaling, and API design"
-timestamp: "2024-11-20T14:00:00"
-uri: "s3://recruitment-recordings/2024/11/sarah-chen-technical.m4a"
+timestamp: "2025-02-19T14:00:00"
+uri: "s3://recruitment-recordings/2025/02/sarah-chen-technical.m4a"
 metadata:
   candidate: "Sarah Chen"
   position: "Senior Backend Engineer"
@@ -31,27 +31,27 @@ moments:
   - name: "System Design - Distributed Cache"
     content: "Candidate designed a distributed caching system with consistent hashing, replication, and failure handling."
     summary: "Strong system design for distributed caching"
-    starts_timestamp: "2024-11-20T14:00:00"
-    ends_timestamp: "2024-11-20T14:35:00"
+    starts_timestamp: "2025-02-19T14:00:00"
+    ends_timestamp: "2025-02-19T14:35:00"
     moment_type: "technical_evaluation"
     emotion_tags: ["impressed", "analytical"]
     topic_tags: ["system-design", "distributed-systems", "caching"]
     speakers:
       - text: "I'd use consistent hashing for key distribution across cache nodes to minimize reshuffling when nodes are added or removed."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-20T14:10:00"
+        timestamp: "2025-02-19T14:10:00"
         emotion: "confident"
       - text: "For fault tolerance, I'd replicate each key to 3 nodes using a replication factor similar to Cassandra."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-20T14:18:00"
+        timestamp: "2025-02-19T14:18:00"
         emotion: "knowledgeable"
       - text: "Excellent approach. How would you handle cache invalidation?"
         speaker_identifier: "Mike Johnson"
-        timestamp: "2024-11-20T14:25:00"
+        timestamp: "2025-02-19T14:25:00"
         emotion: "curious"
       - text: "TTL-based expiration plus event-driven invalidation using a message queue for write-through scenarios."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-20T14:26:00"
+        timestamp: "2025-02-19T14:26:00"
         emotion: "thoughtful"
     metadata:
       score: 5
@@ -60,19 +60,19 @@ moments:
   - name: "Database Scaling Discussion"
     content: "Discussed database sharding strategies, read replicas, and handling hot partitions."
     summary: "Deep discussion on database scaling approaches"
-    starts_timestamp: "2024-11-20T14:35:00"
-    ends_timestamp: "2024-11-20T15:00:00"
+    starts_timestamp: "2025-02-19T14:35:00"
+    ends_timestamp: "2025-02-19T15:00:00"
     moment_type: "technical_evaluation"
     emotion_tags: ["knowledgeable", "experienced"]
     topic_tags: ["database", "scaling", "sharding"]
     speakers:
       - text: "I've implemented both vertical and horizontal sharding. For your use case, I'd recommend range-based sharding on user_id."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-20T14:40:00"
+        timestamp: "2025-02-19T14:40:00"
         emotion: "experienced"
       - text: "Hot partition issues can be mitigated by adding read replicas for heavy-read shards and using cache-aside pattern."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-20T14:48:00"
+        timestamp: "2025-02-19T14:48:00"
         emotion: "practical"
     metadata:
       score: 4.5
@@ -81,19 +81,19 @@ moments:
   - name: "Behavioral - Team Collaboration"
     content: "Discussed experience working with cross-functional teams and handling technical disagreements."
     summary: "Positive behavioral assessment on collaboration"
-    starts_timestamp: "2024-11-20T15:00:00"
-    ends_timestamp: "2024-11-20T15:20:00"
+    starts_timestamp: "2025-02-19T15:00:00"
+    ends_timestamp: "2025-02-19T15:20:00"
     moment_type: "behavioral_evaluation"
     emotion_tags: ["collaborative", "mature"]
     topic_tags: ["teamwork", "communication", "conflict-resolution"]
     speakers:
       - text: "Tell me about a time you had a technical disagreement with a colleague."
         speaker_identifier: "Mike Johnson"
-        timestamp: "2024-11-20T15:02:00"
+        timestamp: "2025-02-19T15:02:00"
         emotion: "inquisitive"
       - text: "We disagreed on microservices vs monolith. I created a comparison doc with pros/cons, we tested both approaches with POCs, and let data guide the decision."
         speaker_identifier: "Sarah Chen"
-        timestamp: "2024-11-20T15:03:00"
+        timestamp: "2025-02-19T15:03:00"
         emotion: "collaborative"
     metadata:
       score: 4.5
@@ -102,8 +102,8 @@ moments:
   - name: "Closing and Questions"
     content: "Candidate asked thoughtful questions about team structure, tech stack, and growth opportunities."
     summary: "Candidate asked insightful questions"
-    starts_timestamp: "2024-11-20T15:20:00"
-    ends_timestamp: "2024-11-20T15:30:00"
+    starts_timestamp: "2025-02-19T15:20:00"
+    ends_timestamp: "2025-02-19T15:30:00"
     moment_type: "candidate_questions"
     emotion_tags: ["curious", "engaged"]
     topic_tags: ["questions", "team-culture", "tech-stack"]

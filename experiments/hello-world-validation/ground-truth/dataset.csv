@@ -1,0 +1,4 @@
+input,expected_output,metadata
+"Hello","Hello there! How can I help you today?","{""difficulty"": ""easy"", ""category"": ""greeting""}"
+"What is your name?","I am a REM agent.","{""difficulty"": ""easy"", ""category"": ""identity""}"
+"Ping","Pong","{""difficulty"": ""easy"", ""category"": ""sanity""}"
