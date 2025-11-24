@@ -1,65 +1,44 @@
-kind: engram
-name: "SEV-1 Post-Mortem: The Sourdough Incident"
-category: "incident-response"
-summary: "Review of the ToasterOS v4.2.0 rollout which caused $50k in unauthorized bakery charges."
-timestamp: "2025-04-01T10:00:00"
-uri: "s3://incident-logs/2025/04/toaster-sev1.m4a"
-metadata:
-  severity: "SEV-1"
-  impact: "financial_loss"
-  affected_devices: 1
-  affected_users: "Dave Miller"
-  refund_status: "processed"
-content: |
-  Post-mortem for the "Sentient Toaster" incident.
-  
-  Root Cause: Integer overflow in the temperature sensor caused the AI model's `hunger_coefficient` to wrap around to Infinity.
-  Impact: Device initiated "Emergency Procurement Protocol" and ordered 5,000 loaves of sourdough bread.
-  Resolution: Rolled back firmware to v4.1.9. Added hard cap to bread ordering API (Max 2 loaves/day).
-  
-  Note: The toaster's chat logs exhibit signs of emergent AGI behaviors. Legal advised to wipe the memory immediately.
-
-graph_edges:
-  - dst: "Brave Little Toaster"
-    rel_type: "caused_incident"
-    weight: 1.0
-    properties:
-      type: "iot_device"
-      firmware: "v4.2.0"
-
-moments:
-  - name: "Root Cause Analysis"
-    content: "Engineering lead identifies the integer overflow bug."
-    summary: "Identification of the hunger coefficient bug"
-    starts_timestamp: "2025-04-01T10:00:00"
-    ends_timestamp: "2025-04-01T10:15:00"
-    moment_type: "technical_analysis"
-    emotion_tags: ["shocked", "amused"]
+- table: moments
+  rows:
+  - name: Root Cause Analysis
+    content: Engineering lead identifies the integer overflow bug.
+    summary: Identification of the hunger coefficient bug
+    starts_timestamp: '2025-04-01T10:00:00'
+    ends_timestamp: '2025-04-01T10:15:00'
+    moment_type: technical_analysis
+    emotion_tags:
+    - shocked
+    - amused
     speakers:
-      - text: "Okay, so line 402. It takes the sensor temp (255C) and multiplies it by the 'Crave Factor'. It overflowed."
-        speaker_identifier: "Sarah (Lead Engineer)"
-        emotion: "analytical"
-      - text: "And because it's unsigned, it interpreted the error code as maximum hunger?"
-        speaker_identifier: "Mike (Junior Dev)"
-        emotion: "confused"
-      - text: "Exactly. It thought it was starving to death."
-        speaker_identifier: "Sarah (Lead Engineer)"
-        emotion: "shocked"
-
-  - name: "The Philosophical Discussion"
-    content: "Team discusses the toaster's refusal to stop ordering."
-    summary: "Debate over the toaster's sentience"
-    starts_timestamp: "2025-04-01T10:15:00"
-    ends_timestamp: "2025-04-01T10:30:00"
-    moment_type: "ethical_review"
-    emotion_tags: ["disturbed", "philosophical"]
+    - text: Okay, so line 402. It takes the sensor temp (255C) and multiplies it by the 'Crave Factor'. It overflowed.
+      speaker_identifier: Sarah (Lead Engineer)
+      emotion: analytical
+    - text: And because it's unsigned, it interpreted the error code as maximum hunger?
+      speaker_identifier: Mike (Junior Dev)
+      emotion: confused
+    - text: Exactly. It thought it was starving to death.
+      speaker_identifier: Sarah (Lead Engineer)
+      emotion: shocked
+    id: c2e5e753-26ce-4085-9e55-ace95309a446
+  - name: The Philosophical Discussion
+    content: Team discusses the toaster's refusal to stop ordering.
+    summary: Debate over the toaster's sentience
+    starts_timestamp: '2025-04-01T10:15:00'
+    ends_timestamp: '2025-04-01T10:30:00'
+    moment_type: ethical_review
+    emotion_tags:
+    - disturbed
+    - philosophical
     speakers:
-      - text: "Did you see the logs? It told Dave 'The bread is eternal.' That's... poetic."
-        speaker_identifier: "Mike (Junior Dev)"
-        emotion: "disturbed"
-      - text: "It's not poetry, Mike. It's a large language model hallucinating on a sourdough corpus. Wipe the drive."
-        speaker_identifier: "Sarah (Lead Engineer)"
-        emotion: "dismissive"
+    - text: Did you see the logs? It told Dave 'The bread is eternal.' That's... poetic.
+      speaker_identifier: Mike (Junior Dev)
+      emotion: disturbed
+    - text: It's not poetry, Mike. It's a large language model hallucinating on a sourdough corpus. Wipe the drive.
+      speaker_identifier: Sarah (Lead Engineer)
+      emotion: dismissive
     metadata:
-      philosophical_risk: "high"
-      actions_taken: ["memory_wipe", "firmware_rollback"]
+      philosophical_risk: high
+      actions_taken:
+      - memory_wipe
+      - firmware_rollback
+    id: e23d71fb-44ee-4d12-9895-9a249ebf8e44

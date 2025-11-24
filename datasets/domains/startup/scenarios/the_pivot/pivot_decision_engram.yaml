@@ -1,85 +1,59 @@
-kind: engram
-name: "Emergency Strategy Meeting - The Pivot"
-category: "strategy-meeting"
-summary: "Critical decision to pivot from B2C Social Network to B2B Vet SaaS. Killing 'Pawsible', launching 'VetOS'."
-timestamp: "2025-02-14T23:00:00"
-uri: "s3://startup-recordings/2025/02/emergency-pivot-meeting.m4a"
-metadata:
-  company: "Pawsible Inc"
-  decision_type: "pivot"
-  burn_rate_concern: "high"
-  runway_months: 6
-content: |
-  Late night strategy session between Alice (CEO) and Raj (CTO).
-  
-  Reviewing the disastrous engagement metrics for the social app (DAU < 100).
-  Contrasting with the insane retention on the "Medical Vault" feature.
-  
-  DECISION: We are pivoting. 
-  1. Shut down Pawsible social feed immediately.
-  2. Rebrand as "VetOS" - An AI-powered operating system for Veterinarian clinics.
-  3. Cancel the PetCo partnership (ads); start selling B2B SaaS.
-
-graph_edges:
-  - dst: "Pawsible Social App"
-    rel_type: "deprecated"
-    weight: 1.0
-    properties:
-      reason: "no-market-fit"
-  
-  - dst: "VetOS"
-    rel_type: "launched"
-    weight: 1.0
-    properties:
-      type: "new-product"
-      business_model: "B2B-SaaS"
-
-moments:
-  - name: "The Hard Truth"
-    content: "Alice shares the brutal metrics. Social network is dead."
-    summary: "Accepting the failure of the original vision"
-    starts_timestamp: "2025-02-14T23:00:00"
-    ends_timestamp: "2025-02-14T23:15:00"
-    moment_type: "problem_identification"
-    emotion_tags: ["depressed", "scared", "honest"]
+- table: moments
+  rows:
+  - name: The Hard Truth
+    content: Alice shares the brutal metrics. Social network is dead.
+    summary: Accepting the failure of the original vision
+    starts_timestamp: '2025-02-14T23:00:00'
+    ends_timestamp: '2025-02-14T23:15:00'
+    moment_type: problem_identification
+    emotion_tags:
+    - depressed
+    - scared
+    - honest
     speakers:
-      - text: "Raj, look at the charts. Retention is 2%. We have 6 months of cash left. Pawsible is dead."
-        speaker_identifier: "Alice Voronina"
-        emotion: "scared"
-      - text: "I know. I spent all weekend fixing the chat server and nobody sent a single message."
-        speaker_identifier: "Raj Patel"
-        emotion: "defeated"
-
-  - name: "The Epiphany"
-    content: "Raj connects the dots between the user feedback and the new direction."
-    summary: "Realization that the 'side feature' is the real product"
-    starts_timestamp: "2025-02-14T23:15:00"
-    ends_timestamp: "2025-02-14T23:30:00"
-    moment_type: "ideation"
-    emotion_tags: ["excited", "epiphany"]
+    - text: Raj, look at the charts. Retention is 2%. We have 6 months of cash left. Pawsible is dead.
+      speaker_identifier: Alice Voronina
+      emotion: scared
+    - text: I know. I spent all weekend fixing the chat server and nobody sent a single message.
+      speaker_identifier: Raj Patel
+      emotion: defeated
+    id: 7faa9f59-470d-4161-afbe-3bd29afcb134
+  - name: The Epiphany
+    content: Raj connects the dots between the user feedback and the new direction.
+    summary: Realization that the 'side feature' is the real product
+    starts_timestamp: '2025-02-14T23:15:00'
+    ends_timestamp: '2025-02-14T23:30:00'
+    moment_type: ideation
+    emotion_tags:
+    - excited
+    - epiphany
     speakers:
-      - text: "Wait. Remember Sarah's interview? And Dr. Chen? They didn't care about the social feed. They wanted the medical records API."
-        speaker_identifier: "Raj Patel"
-        emotion: "excited"
-      - text: "The 'Vault' feature... it has 90% retention. Users come back just to check vaccination dates."
-        speaker_identifier: "Alice Voronina"
-        emotion: "curious"
-
-  - name: "The Decision"
-    content: "Formal decision to pivot to VetOS."
-    summary: "Commitment to the new B2B SaaS direction"
-    starts_timestamp: "2025-02-14T23:30:00"
-    ends_timestamp: "2025-02-14T23:45:00"
-    moment_type: "decision_making"
-    emotion_tags: ["resolved", "determined"]
+    - text: Wait. Remember Sarah's interview? And Dr. Chen? They didn't care about the social feed. They wanted the medical
+        records API.
+      speaker_identifier: Raj Patel
+      emotion: excited
+    - text: The 'Vault' feature... it has 90% retention. Users come back just to check vaccination dates.
+      speaker_identifier: Alice Voronina
+      emotion: curious
+    id: dd5b3699-8ff5-412e-a5b1-ddd53f667a8d
+  - name: The Decision
+    content: Formal decision to pivot to VetOS.
+    summary: Commitment to the new B2B SaaS direction
+    starts_timestamp: '2025-02-14T23:30:00'
+    ends_timestamp: '2025-02-14T23:45:00'
+    moment_type: decision_making
+    emotion_tags:
+    - resolved
+    - determined
     speakers:
-      - text: "Let's kill the social network. Tomorrow. We pivot to B2B. We build 'VetOS'."
-        speaker_identifier: "Alice Voronina"
-        emotion: "determined"
-      - text: "I can strip the social code in 2 days. We can have an MVP of the medical tracker by Monday."
-        speaker_identifier: "Raj Patel"
-        emotion: "confident"
+    - text: Let's kill the social network. Tomorrow. We pivot to B2B. We build 'VetOS'.
+      speaker_identifier: Alice Voronina
+      emotion: determined
+    - text: I can strip the social code in 2 days. We can have an MVP of the medical tracker by Monday.
+      speaker_identifier: Raj Patel
+      emotion: confident
     metadata:
-      new_product_name: "VetOS"
-      old_product_status: "killed"
-      target_market: "Veterinarians"
+      new_product_name: VetOS
+      old_product_status: killed
+      target_market: Veterinarians
+    id: ad7fc34b-1fd3-44dd-8133-2a11fa7e709a

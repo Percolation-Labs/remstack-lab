@@ -1,121 +1,76 @@
-kind: engram
-name: "TechVentures Q4 2024 Earnings Call"
-category: "earnings-call"
-summary: "Quarterly earnings call with strong results, 28% revenue growth, expanding margins, and optimistic guidance"
-timestamp: "2025-01-23T16:30:00"
-uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a"
-metadata:
-  company: "TechVentures Inc"
-  ticker: "TECH"
-  fiscal_quarter: "Q4"
-  fiscal_year: 2024
-  call_type: "quarterly_earnings"
-  participant_count: 47
-  analyst_count: 12
-  device:
-    source: "Zoom Recording"
-    duration_minutes: 75
-content: |
-  TechVentures Q4 2024 Earnings Call - January 23, 2025
-
-  Strong quarter with 28% revenue growth year-over-year, reaching $125M.
-  Operating margin expanded to 25.6%, up from 22.1% a year ago.
-
-  Key highlights:
-  - Enterprise customer growth of 35% (now 1,247 customers)
-  - Net revenue retention of 125%
-  - New product launches driving upsell momentum
-  - International expansion progressing ahead of schedule
-
-  Management expressed confidence in Q1 and provided FY2025 guidance above consensus.
-  Analyst questions focused on competitive dynamics, margin sustainability, and growth durability.
-
-graph_edges:
-  - dst: "TechVentures Inc"
-    rel_type: "about_company"
-    weight: 1.0
-    properties:
-      dst_entity_type: "resources/company"
-      match_type: "explicit"
-      confidence: 1.0
-
-  - dst: "Sarah Martinez"
-    rel_type: "speaker"
-    weight: 1.0
-    properties:
-      dst_entity_type: "users/executive"
-      match_type: "explicit"
-      confidence: 1.0
-      role: "CEO"
-
-  - dst: "John Chen"
-    rel_type: "speaker"
-    weight: 1.0
-    properties:
-      dst_entity_type: "users/executive"
-      match_type: "explicit"
-      confidence: 1.0
-      role: "CFO"
-
-moments:
-  - name: "Opening Remarks - CEO"
-    content: "Sarah Martinez opened with a review of Q4 performance, highlighting 28% revenue growth, strong enterprise adoption, and product innovation milestones."
-    summary: "CEO highlights strong Q4 results and strategic progress"
-    starts_timestamp: "2025-01-23T16:30:00"
-    ends_timestamp: "2025-01-23T16:38:00"
-    uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=0,480"
-    moment_type: "executive_commentary"
-    emotion_tags: ["confident", "optimistic", "proud"]
-    topic_tags: ["revenue-growth", "enterprise-customers", "product-innovation"]
+- table: moments
+  rows:
+  - name: Opening Remarks - CEO
+    content: Sarah Martinez opened with a review of Q4 performance, highlighting 28% revenue growth, strong enterprise adoption,
+      and product innovation milestones.
+    summary: CEO highlights strong Q4 results and strategic progress
+    starts_timestamp: '2025-01-23T16:30:00'
+    ends_timestamp: '2025-01-23T16:38:00'
+    uri: s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=0,480
+    moment_type: executive_commentary
+    emotion_tags:
+    - confident
+    - optimistic
+    - proud
+    topic_tags:
+    - revenue-growth
+    - enterprise-customers
+    - product-innovation
     present_persons:
-      - id: "sarah-martinez"
-        name: "Sarah Martinez"
-        comment: "CEO, TechVentures Inc"
+    - id: sarah-martinez
+      name: Sarah Martinez
+      comment: CEO, TechVentures Inc
     speakers:
-      - text: "We're thrilled to report another outstanding quarter. Revenue of $125 million represents 28% year-over-year growth."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T16:31:15"
-        emotion: "proud"
-      - text: "Our enterprise customer base grew 35% to 1,247 customers, demonstrating strong market demand."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T16:33:00"
-        emotion: "confident"
-      - text: "We're particularly excited about our new AI-powered workflow features launching in Q1."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T16:36:30"
-        emotion: "enthusiastic"
+    - text: We're thrilled to report another outstanding quarter. Revenue of $125 million represents 28% year-over-year growth.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T16:31:15'
+      emotion: proud
+    - text: Our enterprise customer base grew 35% to 1,247 customers, demonstrating strong market demand.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T16:33:00'
+      emotion: confident
+    - text: We're particularly excited about our new AI-powered workflow features launching in Q1.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T16:36:30'
+      emotion: enthusiastic
     metadata:
       revenue_millions: 125
       revenue_growth_yoy_percent: 28
       enterprise_customers: 1247
       customer_growth_percent: 35
-
-  - name: "Financial Results - CFO"
-    content: "John Chen presented detailed financial metrics including margin expansion, cash flow generation, and balance sheet strength."
-    summary: "CFO details financial performance with expanding margins"
-    starts_timestamp: "2025-01-23T16:38:00"
-    ends_timestamp: "2025-01-23T16:50:00"
-    uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=480,1200"
-    moment_type: "financial_review"
-    emotion_tags: ["analytical", "confident"]
-    topic_tags: ["financial-metrics", "margin-expansion", "cash-flow"]
+    id: 611dcd8d-8cda-43ad-94fd-8dfc897b6ac1
+  - name: Financial Results - CFO
+    content: John Chen presented detailed financial metrics including margin expansion, cash flow generation, and balance
+      sheet strength.
+    summary: CFO details financial performance with expanding margins
+    starts_timestamp: '2025-01-23T16:38:00'
+    ends_timestamp: '2025-01-23T16:50:00'
+    uri: s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=480,1200
+    moment_type: financial_review
+    emotion_tags:
+    - analytical
+    - confident
+    topic_tags:
+    - financial-metrics
+    - margin-expansion
+    - cash-flow
     present_persons:
-      - id: "john-chen"
-        name: "John Chen"
-        comment: "CFO, TechVentures Inc"
+    - id: john-chen
+      name: John Chen
+      comment: CFO, TechVentures Inc
     speakers:
-      - text: "Operating margin expanded to 25.6%, up 340 basis points year-over-year, reflecting improved efficiency."
-        speaker_identifier: "John Chen"
-        timestamp: "2025-01-23T16:40:00"
-        emotion: "confident"
-      - text: "Free cash flow was $22 million, representing 18% of revenue and 79% of net income conversion."
-        speaker_identifier: "John Chen"
-        timestamp: "2025-01-23T16:43:00"
-        emotion: "analytical"
-      - text: "We ended the quarter with $180 million in cash and zero debt, giving us financial flexibility for growth investments."
-        speaker_identifier: "John Chen"
-        timestamp: "2025-01-23T16:47:00"
-        emotion: "reassuring"
+    - text: Operating margin expanded to 25.6%, up 340 basis points year-over-year, reflecting improved efficiency.
+      speaker_identifier: John Chen
+      timestamp: '2025-01-23T16:40:00'
+      emotion: confident
+    - text: Free cash flow was $22 million, representing 18% of revenue and 79% of net income conversion.
+      speaker_identifier: John Chen
+      timestamp: '2025-01-23T16:43:00'
+      emotion: analytical
+    - text: We ended the quarter with $180 million in cash and zero debt, giving us financial flexibility for growth investments.
+      speaker_identifier: John Chen
+      timestamp: '2025-01-23T16:47:00'
+      emotion: reassuring
     metadata:
       operating_margin_percent: 25.6
       margin_expansion_bps: 340
@@ -124,156 +79,188 @@ moments:
       cash_millions: 180
       debt_millions: 0
     graph_edges:
-      - dst: "Q4 2024 Financial Report"
-        rel_type: "presents_data_from"
-        weight: 1.0
-        properties:
-          dst_entity_type: "resources/financial-report"
-          match_type: "explicit_reference"
-
-  - name: "Forward Guidance - Management"
-    content: "Management provided Q1 and full-year 2025 guidance above analyst consensus, citing strong pipeline and momentum."
-    summary: "Optimistic guidance provided for Q1 and FY2025"
-    starts_timestamp: "2025-01-23T16:50:00"
-    ends_timestamp: "2025-01-23T16:58:00"
-    uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=1200,1680"
-    moment_type: "forward_guidance"
-    emotion_tags: ["optimistic", "confident"]
-    topic_tags: ["guidance", "outlook", "pipeline"]
+    - dst: Q4 2024 Financial Report
+      rel_type: presents_data_from
+      weight: 1.0
+      properties:
+        dst_entity_type: resources/financial-report
+        match_type: explicit_reference
+    id: e7263408-46dc-4d7f-b509-5359efa79ee0
+  - name: Forward Guidance - Management
+    content: Management provided Q1 and full-year 2025 guidance above analyst consensus, citing strong pipeline and momentum.
+    summary: Optimistic guidance provided for Q1 and FY2025
+    starts_timestamp: '2025-01-23T16:50:00'
+    ends_timestamp: '2025-01-23T16:58:00'
+    uri: s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=1200,1680
+    moment_type: forward_guidance
+    emotion_tags:
+    - optimistic
+    - confident
+    topic_tags:
+    - guidance
+    - outlook
+    - pipeline
     present_persons:
-      - id: "sarah-martinez"
-        name: "Sarah Martinez"
-        comment: "CEO"
-      - id: "john-chen"
-        name: "John Chen"
-        comment: "CFO"
+    - id: sarah-martinez
+      name: Sarah Martinez
+      comment: CEO
+    - id: john-chen
+      name: John Chen
+      comment: CFO
     speakers:
-      - text: "For Q1, we expect revenue of $135 to $138 million, representing 25-28% growth year-over-year."
-        speaker_identifier: "John Chen"
-        timestamp: "2025-01-23T16:51:00"
-        emotion: "confident"
-      - text: "For full-year 2025, we're guiding to $600 to $620 million in revenue, ahead of Street estimates."
-        speaker_identifier: "John Chen"
-        timestamp: "2025-01-23T16:53:00"
-        emotion: "optimistic"
-      - text: "This guidance reflects our strong enterprise pipeline and proven ability to scale efficiently."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T16:56:00"
-        emotion: "reassuring"
+    - text: For Q1, we expect revenue of $135 to $138 million, representing 25-28% growth year-over-year.
+      speaker_identifier: John Chen
+      timestamp: '2025-01-23T16:51:00'
+      emotion: confident
+    - text: For full-year 2025, we're guiding to $600 to $620 million in revenue, ahead of Street estimates.
+      speaker_identifier: John Chen
+      timestamp: '2025-01-23T16:53:00'
+      emotion: optimistic
+    - text: This guidance reflects our strong enterprise pipeline and proven ability to scale efficiently.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T16:56:00'
+      emotion: reassuring
     metadata:
       q1_revenue_guidance_low_millions: 135
       q1_revenue_guidance_high_millions: 138
       fy2025_revenue_guidance_low_millions: 600
       fy2025_revenue_guidance_high_millions: 620
-
-  - name: "Q&A - Competitive Dynamics"
-    content: "Analysts asked about competition from larger platforms. Management emphasized differentiation through specialized features and superior customer support."
-    summary: "Discussion of competitive positioning and differentiation"
-    starts_timestamp: "2025-01-23T16:58:00"
-    ends_timestamp: "2025-01-23T17:10:00"
-    uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=1680,2280"
-    moment_type: "analyst_qa"
-    emotion_tags: ["analytical", "defensive", "confident"]
-    topic_tags: ["competition", "differentiation", "moat"]
+    id: 9e1a878f-6ca1-4c6e-a709-2e6aefa5905a
+  - name: Q&A - Competitive Dynamics
+    content: Analysts asked about competition from larger platforms. Management emphasized differentiation through specialized
+      features and superior customer support.
+    summary: Discussion of competitive positioning and differentiation
+    starts_timestamp: '2025-01-23T16:58:00'
+    ends_timestamp: '2025-01-23T17:10:00'
+    uri: s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=1680,2280
+    moment_type: analyst_qa
+    emotion_tags:
+    - analytical
+    - defensive
+    - confident
+    topic_tags:
+    - competition
+    - differentiation
+    - moat
     present_persons:
-      - id: "sarah-martinez"
-        name: "Sarah Martinez"
-        comment: "CEO"
-      - id: "analyst-david-kim"
-        name: "David Kim"
-        comment: "Goldman Sachs Analyst"
-      - id: "analyst-maria-gonzalez"
-        name: "Maria Gonzalez"
-        comment: "Morgan Stanley Analyst"
+    - id: sarah-martinez
+      name: Sarah Martinez
+      comment: CEO
+    - id: analyst-david-kim
+      name: David Kim
+      comment: Goldman Sachs Analyst
+    - id: analyst-maria-gonzalez
+      name: Maria Gonzalez
+      comment: Morgan Stanley Analyst
     speakers:
-      - text: "Sarah, can you address concerns about larger platforms entering your market?"
-        speaker_identifier: "David Kim"
-        timestamp: "2025-01-23T16:58:30"
-        emotion: "inquisitive"
-      - text: "We've built deep vertical specialization that generalist platforms can't easily replicate. Our win rates remain strong even when competing against larger vendors."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T16:59:30"
-        emotion: "confident"
-      - text: "Our Net Promoter Score of 72 and 125% net revenue retention show that customers see differentiated value."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T17:02:00"
-        emotion: "reassuring"
-      - text: "How are you thinking about pricing power in this environment?"
-        speaker_identifier: "Maria Gonzalez"
-        timestamp: "2025-01-23T17:05:00"
-        emotion: "curious"
-      - text: "We've successfully implemented price increases of 8-10% annually without impacting retention. Value delivered far exceeds pricing."
-        speaker_identifier: "John Chen"
-        timestamp: "2025-01-23T17:06:00"
-        emotion: "confident"
+    - text: Sarah, can you address concerns about larger platforms entering your market?
+      speaker_identifier: David Kim
+      timestamp: '2025-01-23T16:58:30'
+      emotion: inquisitive
+    - text: We've built deep vertical specialization that generalist platforms can't easily replicate. Our win rates remain
+        strong even when competing against larger vendors.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T16:59:30'
+      emotion: confident
+    - text: Our Net Promoter Score of 72 and 125% net revenue retention show that customers see differentiated value.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T17:02:00'
+      emotion: reassuring
+    - text: How are you thinking about pricing power in this environment?
+      speaker_identifier: Maria Gonzalez
+      timestamp: '2025-01-23T17:05:00'
+      emotion: curious
+    - text: We've successfully implemented price increases of 8-10% annually without impacting retention. Value delivered
+        far exceeds pricing.
+      speaker_identifier: John Chen
+      timestamp: '2025-01-23T17:06:00'
+      emotion: confident
     metadata:
       nps_score: 72
       net_revenue_retention_percent: 125
       price_increase_percent: 8-10
-      competitive_win_rate_assessment: "strong"
-
-  - name: "Q&A - International Expansion"
-    content: "Discussion of European and APAC market expansion plans, go-to-market strategy, and initial traction."
-    summary: "International growth strategy and early results"
-    starts_timestamp: "2025-01-23T17:10:00"
-    ends_timestamp: "2025-01-23T17:22:00"
-    uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=2280,2880"
-    moment_type: "analyst_qa"
-    emotion_tags: ["optimistic", "strategic"]
-    topic_tags: ["international", "expansion", "europe", "apac"]
+      competitive_win_rate_assessment: strong
+    id: 2eadccea-32c8-48d1-a7b2-ff6834deefd7
+  - name: Q&A - International Expansion
+    content: Discussion of European and APAC market expansion plans, go-to-market strategy, and initial traction.
+    summary: International growth strategy and early results
+    starts_timestamp: '2025-01-23T17:10:00'
+    ends_timestamp: '2025-01-23T17:22:00'
+    uri: s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=2280,2880
+    moment_type: analyst_qa
+    emotion_tags:
+    - optimistic
+    - strategic
+    topic_tags:
+    - international
+    - expansion
+    - europe
+    - apac
     present_persons:
-      - id: "sarah-martinez"
-        name: "Sarah Martinez"
-        comment: "CEO"
-      - id: "analyst-thomas-mueller"
-        name: "Thomas Mueller"
-        comment: "JP Morgan Analyst"
+    - id: sarah-martinez
+      name: Sarah Martinez
+      comment: CEO
+    - id: analyst-thomas-mueller
+      name: Thomas Mueller
+      comment: JP Morgan Analyst
     speakers:
-      - text: "Can you provide an update on international expansion progress?"
-        speaker_identifier: "Thomas Mueller"
-        timestamp: "2025-01-23T17:10:30"
-        emotion: "curious"
-      - text: "We opened offices in London and Singapore in Q4. International revenue is now 15% of total, up from 8% a year ago."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T17:11:30"
-        emotion: "proud"
-      - text: "We're seeing particularly strong demand in financial services and healthcare verticals in Europe."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T17:14:00"
-        emotion: "optimistic"
-      - text: "International is still in early innings but we expect it to be 25-30% of revenue within 3 years."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T17:18:00"
-        emotion: "confident"
+    - text: Can you provide an update on international expansion progress?
+      speaker_identifier: Thomas Mueller
+      timestamp: '2025-01-23T17:10:30'
+      emotion: curious
+    - text: We opened offices in London and Singapore in Q4. International revenue is now 15% of total, up from 8% a year
+        ago.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T17:11:30'
+      emotion: proud
+    - text: We're seeing particularly strong demand in financial services and healthcare verticals in Europe.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T17:14:00'
+      emotion: optimistic
+    - text: International is still in early innings but we expect it to be 25-30% of revenue within 3 years.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T17:18:00'
+      emotion: confident
     metadata:
       international_revenue_percent: 15
       international_revenue_percent_yoy: 8
-      new_offices: ["London", "Singapore"]
-      target_international_percent_3yr: "25-30"
-      strong_verticals: ["financial_services", "healthcare"]
-
-  - name: "Closing Remarks"
-    content: "Management thanked participants and reiterated confidence in long-term growth trajectory and market opportunity."
-    summary: "Confident closing remarks and appreciation"
-    starts_timestamp: "2025-01-23T17:22:00"
-    ends_timestamp: "2025-01-23T17:25:00"
-    uri: "s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=2880,3000"
-    moment_type: "closing"
-    emotion_tags: ["grateful", "confident", "optimistic"]
-    topic_tags: ["thank-you", "summary", "outlook"]
+      new_offices:
+      - London
+      - Singapore
+      target_international_percent_3yr: 25-30
+      strong_verticals:
+      - financial_services
+      - healthcare
+    id: 6d899bd4-a950-4a44-b49c-0e8c916b4397
+  - name: Closing Remarks
+    content: Management thanked participants and reiterated confidence in long-term growth trajectory and market opportunity.
+    summary: Confident closing remarks and appreciation
+    starts_timestamp: '2025-01-23T17:22:00'
+    ends_timestamp: '2025-01-23T17:25:00'
+    uri: s3://finance-recordings/2024/q4/techventures-earnings-call.m4a#t=2880,3000
+    moment_type: closing
+    emotion_tags:
+    - grateful
+    - confident
+    - optimistic
+    topic_tags:
+    - thank-you
+    - summary
+    - outlook
     present_persons:
-      - id: "sarah-martinez"
-        name: "Sarah Martinez"
-        comment: "CEO"
+    - id: sarah-martinez
+      name: Sarah Martinez
+      comment: CEO
     speakers:
-      - text: "Thank you all for joining today. We're excited about our momentum and the massive market opportunity ahead."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T17:23:00"
-        emotion: "grateful"
-      - text: "We remain focused on delivering exceptional value to customers and driving profitable growth."
-        speaker_identifier: "Sarah Martinez"
-        timestamp: "2025-01-23T17:24:00"
-        emotion: "confident"
+    - text: Thank you all for joining today. We're excited about our momentum and the massive market opportunity ahead.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T17:23:00'
+      emotion: grateful
+    - text: We remain focused on delivering exceptional value to customers and driving profitable growth.
+      speaker_identifier: Sarah Martinez
+      timestamp: '2025-01-23T17:24:00'
+      emotion: confident
     metadata:
-      call_sentiment: "very_positive"
-      management_tone: "confident"
+      call_sentiment: very_positive
+      management_tone: confident
+    id: a5bb5b37-cbe3-45e0-b959-6187a2258b4b

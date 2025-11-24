@@ -1,55 +1,34 @@
-kind: engram
-name: "Secret Report: The Alexandrian Docks"
-category: "espionage"
-summary: "Intelligence gathered from the Alexandrian harbor. The ships are loaded but guarded. No wind issues observed."
-timestamp: "44-02-15T22:00:00"
-uri: "s3://republic-archives/intel/report_gamma_7.scroll"
-metadata:
-  agent: "Decimus"
-  location: "Alexandria, Egypt"
-  reliability: "high"
-  target: "Grain Fleet"
-content: |
-  Report to Caesar.
-  
-  I have infiltrated the docks. The official story of "adverse winds" is a lie. The winds are favorable north-westerly.
-  
-  The ships are fully loaded with wheat but are being held at anchor by the Royal Guard.
-  I overheard the Harbor Master speaking with a Palace Eunuch.
-
-graph_edges:
-  - dst: "Grain Fleet"
-    rel_type: "monitored_by"
-    weight: 1.0
-    properties:
-      status: "embargoed"
-
-moments:
-  - name: "Eavesdropping at the Lighthouse"
-    content: "Overheard conversation confirming the Royal Decree."
-    summary: "Confirmation of the embargo order"
-    starts_timestamp: "44-02-15T22:00:00"
-    ends_timestamp: "44-02-15T22:15:00"
-    moment_type: "observation"
-    emotion_tags: ["secretive", "urgent"]
+- table: moments
+  rows:
+  - name: Eavesdropping at the Lighthouse
+    content: Overheard conversation confirming the Royal Decree.
+    summary: Confirmation of the embargo order
+    starts_timestamp: 44-02-15T22:00:00
+    ends_timestamp: 44-02-15T22:15:00
+    moment_type: observation
+    emotion_tags:
+    - secretive
+    - urgent
     speakers:
-      - text: "The Queen is firm. Not a bushel leaves for Rome while Memphis starves."
-        speaker_identifier: "Palace Eunuch"
-        emotion: "authoritative"
-      - text: "But Antony expects the shipment! He will blame pirates."
-        speaker_identifier: "Harbor Master"
-        emotion: "fearful"
+    - text: The Queen is firm. Not a bushel leaves for Rome while Memphis starves.
+      speaker_identifier: Palace Eunuch
+      emotion: authoritative
+    - text: But Antony expects the shipment! He will blame pirates.
+      speaker_identifier: Harbor Master
+      emotion: fearful
     metadata:
-      intel_value: "critical"
-      corroborates: "royal_decree"
-
-  - name: "Visual Confirmation"
-    content: "Observed 50 quinqueremes loaded with grain sitting idle."
-    summary: "Visual proof of the fleet's readiness"
-    starts_timestamp: "44-02-15T22:30:00"
-    ends_timestamp: "44-02-15T23:00:00"
-    moment_type: "surveillance"
-    emotion_tags: ["certain"]
+      intel_value: critical
+      corroborates: royal_decree
+    id: cc8e088d-f12b-4b1f-a027-6d19530d5a8a
+  - name: Visual Confirmation
+    content: Observed 50 quinqueremes loaded with grain sitting idle.
+    summary: Visual proof of the fleet's readiness
+    starts_timestamp: 44-02-15T22:30:00
+    ends_timestamp: 44-02-15T23:00:00
+    moment_type: surveillance
+    emotion_tags:
+    - certain
     metadata:
       ship_count: 50
-      cargo: "wheat"
+      cargo: wheat
+    id: 32927af5-4df8-461d-9fba-5fe2f476fd2f

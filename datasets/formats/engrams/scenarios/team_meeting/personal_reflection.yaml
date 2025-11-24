@@ -1,83 +1,59 @@
-kind: engram
-name: "Evening Reflection - Work-Life Balance"
-category: "diary"
-summary: "Personal reflection on work week, accomplishments, and weekend plans"
-timestamp: "2025-11-18T20:30:00Z"
-metadata:
-  device:
-    model: "MacBook Pro"
-    app: "Notes.app"
-    version: "13.0"
-  entry_type: "personal"
-  privacy_level: "private"
-content: |
-  Reflecting on this week - felt a bit overwhelmed with the sprint deadlines
-  but managed to ship the API rate limiting improvements on time. The team
-  collaboration was excellent, especially the pairing session with Mike on
-  the token bucket implementation.
-
-  The database migration is taking longer than expected, which is stressful.
-  Need to remember that good engineering takes time and rushing leads to bugs.
-
-  Looking forward to the weekend - planning to disconnect completely and spend
-  time with family. Need to maintain better work-life boundaries going forward.
-  The team is doing great work, and I'm proud of what we're building together.
-
-moments:
-  - name: "Work Week Reflection"
-    content: "Felt overwhelmed with sprint deadlines but proud of API improvements shipped. Database migration stress is real."
-    summary: "Mixed feelings about work week - stress but accomplishment"
-    starts_timestamp: "2025-11-18T20:30:00Z"
-    ends_timestamp: "2025-11-18T20:35:00Z"
-    moment_type: "reflection"
-    emotion_tags: ["stressed", "proud", "accomplished", "overwhelmed"]
-    topic_tags: ["work-stress", "sprint-delivery", "team-collaboration"]
+- table: moments
+  rows:
+  - name: Work Week Reflection
+    content: Felt overwhelmed with sprint deadlines but proud of API improvements shipped. Database migration stress is real.
+    summary: Mixed feelings about work week - stress but accomplishment
+    starts_timestamp: '2025-11-18T20:30:00Z'
+    ends_timestamp: '2025-11-18T20:35:00Z'
+    moment_type: reflection
+    emotion_tags:
+    - stressed
+    - proud
+    - accomplished
+    - overwhelmed
+    topic_tags:
+    - work-stress
+    - sprint-delivery
+    - team-collaboration
     metadata:
-      reflection_category: "work"
+      reflection_category: work
       sentiment_score: 0.6
-
-  - name: "Engineering Philosophy"
-    content: "Reminded myself that good engineering takes time and rushing leads to bugs"
-    summary: "Reaffirming engineering principles - quality over speed"
-    starts_timestamp: "2025-11-18T20:35:00Z"
-    ends_timestamp: "2025-11-18T20:37:00Z"
-    moment_type: "insight"
-    emotion_tags: ["thoughtful", "reflective"]
-    topic_tags: ["engineering-philosophy", "quality", "technical-debt"]
+    id: b79cb144-e211-497c-9dc7-20d0f7506c71
+  - name: Engineering Philosophy
+    content: Reminded myself that good engineering takes time and rushing leads to bugs
+    summary: Reaffirming engineering principles - quality over speed
+    starts_timestamp: '2025-11-18T20:35:00Z'
+    ends_timestamp: '2025-11-18T20:37:00Z'
+    moment_type: insight
+    emotion_tags:
+    - thoughtful
+    - reflective
+    topic_tags:
+    - engineering-philosophy
+    - quality
+    - technical-debt
     metadata:
-      insight_type: "principle_affirmation"
-
-  - name: "Weekend Planning"
-    content: "Planning to disconnect completely and focus on family time this weekend. Need better work-life boundaries."
-    summary: "Weekend plans focused on rest and family - setting boundaries"
-    starts_timestamp: "2025-11-18T20:37:00Z"
-    ends_timestamp: "2025-11-18T20:40:00Z"
-    moment_type: "planning"
-    emotion_tags: ["hopeful", "anticipatory", "determined"]
-    topic_tags: ["weekend-plans", "family-time", "work-life-balance"]
+      insight_type: principle_affirmation
+    id: 30ecbc04-5ac7-4bba-9303-c6a7dc0d9966
+  - name: Weekend Planning
+    content: Planning to disconnect completely and focus on family time this weekend. Need better work-life boundaries.
+    summary: Weekend plans focused on rest and family - setting boundaries
+    starts_timestamp: '2025-11-18T20:37:00Z'
+    ends_timestamp: '2025-11-18T20:40:00Z'
+    moment_type: planning
+    emotion_tags:
+    - hopeful
+    - anticipatory
+    - determined
+    topic_tags:
+    - weekend-plans
+    - family-time
+    - work-life-balance
     present_persons:
-      - id: "self"
-        name: "Me"
-        comment: "Personal reflection"
+    - id: self
+      name: Me
+      comment: Personal reflection
     metadata:
-      plan_category: "personal_wellness"
-      commitment_level: "high"
-
-graph_edges:
-  - dst: "Daily Team Standup - Nov 18"
-    rel_type: "reflects_on"
-    weight: 0.8
-    properties:
-      dst_name: "Daily Team Standup - Nov 18"
-      dst_entity_type: "resource/engram"
-      match_type: "temporal_context"
-      confidence: 0.8
-
-  - dst: "Mike Rodriguez"
-    rel_type: "mentions"
-    weight: 0.7
-    properties:
-      dst_name: "Mike Rodriguez"
-      dst_entity_type: "person/engineer"
-      match_type: "explicit_mention"
-      confidence: 1.0
+      plan_category: personal_wellness
+      commitment_level: high
+    id: 4859c60e-21b8-4036-a90e-e071dc80c0c5
