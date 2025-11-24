@@ -60,6 +60,10 @@ docker run -d \
 # Load quickstart dataset
 rem db load datasets/quickstart/sample_data.yaml --user-id demo-user
 
+# Optional: Set default LLM provider via environment variable
+# export LLM__DEFAULT_MODEL="openai:gpt-4.1-nano"  # Fast and cheap
+# export LLM__DEFAULT_MODEL="anthropic:claude-sonnet-4-5-20250929"  # High quality (default)
+
 # Ask questions
 rem ask --user-id demo-user "What documents exist in the system?"
 ```
