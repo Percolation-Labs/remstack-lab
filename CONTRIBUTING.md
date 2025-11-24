@@ -127,7 +127,106 @@ Before submitting:
 
 ## Experiment Contributions
 
-Experiments should be Jupyter notebooks demonstrating:
+Experiments provide structured evaluation of REM agents with ground-truth datasets.
+
+### Experiment Structure
+
+All experiments should follow this structure:
+
+```
+experiments/{experiment-name}/
+├── experiment.yaml          # ExperimentConfig (metadata, agent ref, evaluator ref)
+├── README.md                # Auto-generated documentation
+├── ground-truth/            # Evaluation datasets (Q&A pairs)
+│   ├── dataset.csv          # Input/output pairs for evaluation
+│   ├── dataset.yaml         # Alternative YAML format
+│   └── README.md            # Format documentation
+├── seed-data/              # Data to seed REM before running experiments
+│   └── data.yaml           # Users, resources, moments in REM format
+└── results/                # Experiment results and metrics
+    └── {run-timestamp}/    # Each run gets its own timestamped folder
+        ├── metrics.json    # Summary metrics
+        └── run_info.json   # Run metadata (eval framework URLs, etc)
+```
+
+### Creating an Experiment
+
+Use the REM CLI to create experiments:
+
+```bash
+rem experiments create my-agent-eval \
+    --agent my-agent \
+    --evaluator default \
+    --description "Evaluation of my-agent on Q&A task"
+```
+
+This automatically generates the directory structure with placeholder READMEs.
+
+### Ground Truth Guidelines
+
+1. **Format**: Use CSV or YAML with `input`, `expected_output`, and `metadata` fields
+2. **Coverage**: Minimum 20 examples covering diverse scenarios
+3. **Quality**: Have subject matter experts validate expected outputs
+4. **Metadata**: Include difficulty, category, and priority tags
+
+Example CSV:
+
+```csv
+input,expected_output,metadata
+"What documents exist?","There are 3 documents: design.md, api_spec.md, notes.txt","{\"difficulty\": \"easy\", \"category\": \"lookup\"}"
+"Summarize the API spec","The API provides REST endpoints for...","{\"difficulty\": \"medium\", \"category\": \"summarization\"}"
+```
+
+### Seed Data Guidelines
+
+1. **Minimal**: Only include data necessary for the experiment
+2. **Anonymized**: Use fictional names, companies, and content
+3. **REM Format**: Follow standard REM YAML structure (users, resources, moments)
+4. **Documented**: Explain what data is being seeded and why
+
+Example seed data:
+
+```yaml
+users:
+  - id: test-user-001
+    user_id: experiment-test
+    email: test@example.com
+
+resources:
+  - id: resource-001
+    user_id: experiment-test
+    label: design-doc
+    content: "# Design Document\n\nThis is our system design..."
+    tags: [design, architecture]
+```
+
+### Testing Your Experiment
+
+Before submitting:
+
+1. **Validate Structure**:
+   ```bash
+   rem experiments show my-agent-eval
+   ```
+
+2. **Load Seed Data**:
+   ```bash
+   rem db load --file experiments/my-agent-eval/seed-data/data.yaml --user-id experiment-test
+   ```
+
+3. **Run Experiment**:
+   ```bash
+   rem experiments run my-agent-eval --dry-run
+   ```
+
+4. **Verify Results**:
+   ```bash
+   cat experiments/my-agent-eval/results/*/metrics.json
+   ```
+
+### Jupyter Notebooks (Optional)
+
+In addition to structured experiments, you can contribute Jupyter notebooks demonstrating:
 
 - Agent evaluation workflows
 - Custom REM query patterns
