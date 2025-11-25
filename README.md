@@ -48,14 +48,9 @@ rem configure --yes --install
 git clone https://github.com/Percolation-Labs/remstack-lab.git
 cd remstack-lab
 
-# Start PostgreSQL (if not already running)
-docker run -d \
-  --name rem-postgres \
-  -e POSTGRES_USER=rem \
-  -e POSTGRES_PASSWORD=rem \
-  -e POSTGRES_DB=rem \
-  -p 5050:5432 \
-  pgvector/pgvector:pg18
+# Start PostgreSQL with docker-compose
+curl -O https://gist.githubusercontent.com/percolating-sirsh/d117b673bc0edfdef1a5068ccd3cf3e5/raw/docker-compose.prebuilt.yml
+docker compose -f docker-compose.prebuilt.yml up -d postgres
 
 # Load quickstart dataset
 rem db load datasets/quickstart/sample_data.yaml --user-id demo-user
