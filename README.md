@@ -60,14 +60,14 @@ curl -O https://gist.githubusercontent.com/percolating-sirsh/d117b673bc0edfdef1a
 docker compose -f docker-compose.prebuilt.yml up -d postgres
 
 # Load quickstart dataset
-rem db load datasets/quickstart/sample_data.yaml --user-id default
+rem db load datasets/quickstart/sample_data.yaml
 
 # Optional: Set default LLM provider via environment variable
 # export LLM__DEFAULT_MODEL="openai:gpt-4.1-nano"  # Fast and cheap
 # export LLM__DEFAULT_MODEL="anthropic:claude-sonnet-4-5-20250929"  # High quality (default)
 
 # Ask questions
-rem ask --user-id default "What documents exist in the system?"
+rem ask "What documents exist in the system?"
 ```
 
 ## Repository Structure
@@ -165,12 +165,10 @@ See [Evaluation Framework](https://github.com/Percolation-Labs/remstack/blob/mai
 
 ```bash
 # Load domain-specific dataset
-rem db load \
-  --file datasets/domains/recruitment/scenarios/candidate_pipeline/data.yaml \
-  --user-id acme-corp
+rem db load datasets/domains/recruitment/scenarios/candidate_pipeline/data.yaml
 
 # Verify data loaded
-rem ask --user-id acme-corp "List all candidates"
+rem ask "List all candidates"
 ```
 
 ### Work from This Directory
@@ -187,12 +185,9 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install "remdb[all]"
 
-# Set up your environment
-export USER_ID="your-company-id"
-
 # Load multiple datasets
-rem db load --file datasets/quickstart/sample_data.yaml --user-id $USER_ID
-rem db load --file datasets/domains/enterprise/scenarios/team_collaboration/data.yaml --user-id $USER_ID
+rem db load datasets/quickstart/sample_data.yaml
+rem db load datasets/domains/enterprise/scenarios/team_collaboration/data.yaml
 
 # Run experiments
 jupyter notebook experiments/
@@ -210,7 +205,7 @@ cp -r datasets/domains/misc/scenarios/template datasets/domains/misc/scenarios/m
 vim datasets/domains/misc/scenarios/my_scenario/data.yaml
 
 # Load and test
-rem db load --file datasets/domains/misc/scenarios/my_scenario/data.yaml --user-id test-user
+rem db load datasets/domains/misc/scenarios/my_scenario/data.yaml
 ```
 
 ## Contributing
@@ -224,6 +219,108 @@ We welcome dataset contributions! Please:
 5. Tag with appropriate metadata
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Custom Agents
+
+REM supports custom agents that use `search_rem` to query your knowledge base. Agents are defined in YAML and can be used via the CLI.
+
+### Agent Structure
+
+```
+remstack-lab/
+├── agents/
+│   └── team-assistant.yaml    # Custom agent definition
+├── datasets/
+└── ...
+```
+
+### Example: Team Knowledge Assistant
+
+The included `agents/team-assistant.yaml` is a custom agent for the quickstart dataset:
+
+```yaml
+# agents/team-assistant.yaml
+type: object
+description: |
+  # Team Knowledge Assistant
+
+  You are a helpful team assistant that helps engineers find information across
+  team documentation, design docs, retrospectives, and project artifacts.
+
+  ## When to Use Tools
+
+  **Use search_rem** when the user asks about:
+  - Team documents, design docs, or technical specifications
+  - Past decisions, retrospectives, or meeting notes
+  - Who worked on what, team members, or expertise areas
+  ...
+
+json_schema_extra:
+  kind: agent
+  name: team-assistant
+  version: "1.0.0"
+  structured_output: false
+  mcp_servers:
+    - type: local
+      module: rem.mcp_server
+      id: rem-local
+  tools:
+    - name: search_rem
+      description: Search team knowledge base
+```
+
+### Using Custom Agents
+
+```bash
+# Register your agents directory
+export SCHEMA__PATHS="./agents"
+
+# Or add to ~/.rem/config.yaml:
+# schema:
+#   paths:
+#     - ./agents
+
+# Use the custom agent (first arg is agent name, second is query)
+rem ask team-assistant "What did we decide about API design?"
+
+# The agent will use search_rem to find relevant documents
+rem ask team-assistant "Who worked on the frontend refactor?"
+
+# Compare with the default rem agent
+rem ask "What documents exist?"
+```
+
+### Creating Your Own Agent
+
+1. Copy an existing agent as a template:
+```bash
+cp agents/team-assistant.yaml agents/my-agent.yaml
+```
+
+2. Edit the description to define your agent's personality and behavior:
+   - When to use `search_rem` vs general knowledge
+   - Which tables to search (resources, moments, users, messages)
+   - Query strategies and examples
+   - Response style guidelines
+
+3. Configure the tools and resources:
+```yaml
+json_schema_extra:
+  kind: agent
+  name: my-agent
+  tools:
+    - name: search_rem
+      description: Your tool description
+  resources:
+    - uri: rem://resources?category=your-category
+      name: Your Resources
+```
+
+4. Test your agent:
+```bash
+export SCHEMA__PATHS="./agents"
+rem ask my-agent "Test query"
+```
 
 ## Data Format
 

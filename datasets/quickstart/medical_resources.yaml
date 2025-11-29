@@ -1,6 +1,6 @@
 # Medical Resources Dataset
 # Version: 1.0.0
-# User ID: system
+# User ID: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f (auto-generated from test@rem.ai)
 # Description: Psychotropic drugs, care stages, roles, and crisis resources for mental health support
 # Generated: 2025-11-28T12:23:55.394588Z
 # Sources: RxNorm, openFDA FAERS, SAMHSA TIPs, CMS BHI
@@ -8,7 +8,7 @@
 - table: resources
   rows:
   - id: 2dd76f90-c287-502e-bd0d-c578cc659c0d
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Fluoxetine
     uri: rxnorm:104849
     content: 'Fluoxetine - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -85,7 +85,7 @@
         record_count: 114788
         license: Public Domain (FDA)
   - id: 487bd8a0-5d66-5f2d-8bb0-cc75746aa8e3
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Sertraline
     uri: rxnorm:208149
     content: 'Sertraline - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -161,7 +161,7 @@
         record_count: 182988
         license: Public Domain (FDA)
   - id: 3b280d75-6e0b-5675-82bb-c1fbd044df57
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Paroxetine
     uri: rxnorm:1430128
     content: 'Paroxetine - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -237,7 +237,7 @@
         record_count: 80352
         license: Public Domain (FDA)
   - id: fc8b2fa7-14e1-53ee-a6f6-d11b0157ab63
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Citalopram
     uri: rxnorm:213344
     content: 'Citalopram - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -314,7 +314,7 @@
         record_count: 157304
         license: Public Domain (FDA)
   - id: 70108242-7617-560b-ab9e-66f9ed6c608a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Escitalopram
     uri: rxnorm:352272
     content: 'Escitalopram - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -390,7 +390,7 @@
         record_count: 106151
         license: Public Domain (FDA)
   - id: 9d8330be-5735-5d1d-9391-c1ce87ac5f1e
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Fluvoxamine
     uri: rxnorm:903873
     content: 'Fluvoxamine - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -467,7 +467,7 @@
         record_count: 9199
         license: Public Domain (FDA)
   - id: 7fec3db1-bfdc-521b-9015-c3c9fe36a3bc
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Vilazodone
     uri: rxnorm:1653470
     content: 'Vilazodone - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -543,7 +543,7 @@
         record_count: 2534
         license: Public Domain (FDA)
   - id: 993a1ac7-c315-5a22-bb7b-f79c3ec304e5
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Vortioxetine
     uri: rxnorm:1790886
     content: 'Vortioxetine - Selective Serotonin Reuptake Inhibitor (SSRI)
@@ -620,7 +620,7 @@
         record_count: 13006
         license: Public Domain (FDA)
   - id: ffc94d86-bd59-5fbc-a3e8-67c407df311a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Venlafaxine
     uri: rxnorm:208851
     content: 'Venlafaxine - Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
@@ -697,7 +697,7 @@
         record_count: 134382
         license: Public Domain (FDA)
   - id: ade64099-3ccb-547e-b1c8-bf71ab538114
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Duloxetine
     uri: rxnorm:1652069
     content: 'Duloxetine - Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
@@ -773,7 +773,7 @@
         record_count: 107317
         license: Public Domain (FDA)
   - id: 4ef1f140-64ad-590f-ad57-1c13a1e093fd
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Desvenlafaxine
     uri: rxnorm:1435480
     content: 'Desvenlafaxine - Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
@@ -849,7 +849,7 @@
         record_count: 9366
         license: Public Domain (FDA)
   - id: a7b046bd-c77d-5a1d-9304-7ce59405fee7
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Levomilnacipran
     uri: rxnorm:1433250
     content: 'Levomilnacipran - Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
@@ -926,7 +926,7 @@
         record_count: 7076
         license: Public Domain (FDA)
   - id: b420b3b7-e9e9-539f-b1c3-cb60cb8105e2
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Milnacipran
     uri: rxnorm:833151
     content: 'Milnacipran - Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
@@ -1002,7 +1002,7 @@
         record_count: 3170
         license: Public Domain (FDA)
   - id: 957f0f22-d924-5f57-b5f4-685b1ebd6c13
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Amitriptyline
     uri: rxnorm:856836
     content: 'Amitriptyline - Tricyclic Antidepressant (TCA)
@@ -1078,7 +1078,7 @@
         record_count: 148026
         license: Public Domain (FDA)
   - id: c1cf1a92-0992-55ca-9c3a-2266da717459
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Nortriptyline
     uri: rxnorm:209329
     content: 'Nortriptyline - Tricyclic Antidepressant (TCA)
@@ -1154,7 +1154,7 @@
         record_count: 42684
         license: Public Domain (FDA)
   - id: c7aea636-284d-567e-9b53-206290e431b1
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Imipramine
     uri: rxnorm:835564
     content: 'Imipramine - Tricyclic Antidepressant (TCA)
@@ -1231,7 +1231,7 @@
         record_count: 7337
         license: Public Domain (FDA)
   - id: 9abc4fc7-9bac-579a-8738-43c1a76ce5ca
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Desipramine
     uri: rxnorm:1099290
     content: 'Desipramine - Tricyclic Antidepressant (TCA)
@@ -1308,7 +1308,7 @@
         record_count: 2932
         license: Public Domain (FDA)
   - id: 6483b6bc-f770-5ffd-a7ac-0c5a4597f6d8
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Clomipramine
     uri: rxnorm:2375713
     content: 'Clomipramine - Tricyclic Antidepressant (TCA)
@@ -1385,7 +1385,7 @@
         record_count: 10040
         license: Public Domain (FDA)
   - id: b8fb6552-60cd-5a41-a158-443e57c5b525
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Doxepin
     uri: rxnorm:1000093
     content: 'Doxepin - Tricyclic Antidepressant (TCA)
@@ -1459,7 +1459,7 @@
         record_count: 24916
         license: Public Domain (FDA)
   - id: 76bc2908-4748-5259-9f30-847ef1195b34
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Trimipramine
     uri: rxnorm:199820
     content: 'Trimipramine - Tricyclic Antidepressant (TCA)
@@ -1536,7 +1536,7 @@
         record_count: 3217
         license: Public Domain (FDA)
   - id: 18b01fde-104e-57af-8edc-72b052dcd991
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Protriptyline
     uri: rxnorm:905168
     content: 'Protriptyline - Tricyclic Antidepressant (TCA)
@@ -1613,7 +1613,7 @@
         record_count: 645
         license: Public Domain (FDA)
   - id: c37ce14a-bc1c-5db3-be9e-75f1ff7be419
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Phenelzine
     uri: rxnorm:104836
     content: 'Phenelzine - Monoamine Oxidase Inhibitor (MAOI)
@@ -1690,7 +1690,7 @@
         record_count: 1072
         license: Public Domain (FDA)
   - id: 60d384ec-71a1-5556-b544-ebaacde6f79e
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Tranylcypromine
     uri: rxnorm:104838
     content: 'Tranylcypromine - Monoamine Oxidase Inhibitor (MAOI)
@@ -1767,7 +1767,7 @@
         record_count: 1613
         license: Public Domain (FDA)
   - id: 3bfbe6c7-b59b-58a8-936c-19bfd59ea5bf
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Isocarboxazid
     uri: rxnorm:201708
     content: 'Isocarboxazid - Monoamine Oxidase Inhibitor (MAOI)
@@ -1841,7 +1841,7 @@
         record_count: 102
         license: Public Domain (FDA)
   - id: 52454882-9d8e-54df-bfdd-b5a85eda86d2
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Selegiline
     uri: rxnorm:859188
     content: 'Selegiline - Monoamine Oxidase Inhibitor (MAOI)
@@ -1915,7 +1915,7 @@
         record_count: 4323
         license: Public Domain (FDA)
   - id: a398a9ff-31ab-5aec-be4e-a365f0956192
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Bupropion
     uri: rxnorm:1232591
     content: 'Bupropion - Atypical Antidepressant
@@ -1992,7 +1992,7 @@
         record_count: 114904
         license: Public Domain (FDA)
   - id: 2f2a3b30-66d0-55eb-a516-c9680fdcc9b7
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Mirtazapine
     uri: rxnorm:2049256
     content: 'Mirtazapine - Atypical Antidepressant
@@ -2069,7 +2069,7 @@
         record_count: 103685
         license: Public Domain (FDA)
   - id: f479c8be-92e8-54a5-afc9-87b1542826b5
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Trazodone
     uri: rxnorm:2699618
     content: 'Trazodone - Atypical Antidepressant
@@ -2145,7 +2145,7 @@
         record_count: 179227
         license: Public Domain (FDA)
   - id: ad7a23d0-5e8b-55c6-8d20-4ca5f299dfb3
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Nefazodone
     uri: rxnorm:1098649
     content: 'Nefazodone - Atypical Antidepressant
@@ -2221,7 +2221,7 @@
         record_count: 1785
         license: Public Domain (FDA)
   - id: 522eb237-47f3-5e55-9e75-efc72c47b24a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Haloperidol
     uri: rxnorm:1719847
     content: 'Haloperidol - First-Generation Antipsychotic
@@ -2298,7 +2298,7 @@
         record_count: 37566
         license: Public Domain (FDA)
   - id: 1210fcbf-ecd7-55e5-9e75-0f9e5b7f5209
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Chlorpromazine
     uri: rxnorm:1730076
     content: 'Chlorpromazine - First-Generation Antipsychotic
@@ -2375,7 +2375,7 @@
         record_count: 10862
         license: Public Domain (FDA)
   - id: 30143b6a-3d92-5892-af94-1119d061ff1c
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Fluphenazine
     uri: rxnorm:859824
     content: 'Fluphenazine - First-Generation Antipsychotic
@@ -2452,7 +2452,7 @@
         record_count: 3027
         license: Public Domain (FDA)
   - id: 3592da74-98dd-55ce-b2bc-df35046216da
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Perphenazine
     uri: rxnorm:108874
     content: 'Perphenazine - First-Generation Antipsychotic
@@ -2529,7 +2529,7 @@
         record_count: 7080
         license: Public Domain (FDA)
   - id: 5b50b276-2d50-572a-9fd3-599e13c80af8
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Thioridazine
     uri: rxnorm:108878
     content: 'Thioridazine - First-Generation Antipsychotic
@@ -2606,7 +2606,7 @@
         record_count: 3738
         license: Public Domain (FDA)
   - id: 08e76887-4bc2-54e8-9ec8-d940a76ca28a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Thiothixene
     uri: rxnorm:313361
     content: 'Thiothixene - First-Generation Antipsychotic
@@ -2683,7 +2683,7 @@
         record_count: 553
         license: Public Domain (FDA)
   - id: 88d8d161-43a8-55cb-8be5-3790c5b20b8e
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Loxapine
     uri: rxnorm:1367521
     content: 'Loxapine - First-Generation Antipsychotic
@@ -2760,7 +2760,7 @@
         record_count: 7789
         license: Public Domain (FDA)
   - id: b3b5f2e0-f234-541e-8967-524ab5f269c2
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Molindone
     uri: rxnorm:1298816
     content: 'Molindone - First-Generation Antipsychotic
@@ -2837,7 +2837,7 @@
         record_count: 55
         license: Public Domain (FDA)
   - id: 10cb286b-a502-5248-a13e-6d65be432ca9
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Risperidone
     uri: rxnorm:104781
     content: 'Risperidone - Second-Generation Antipsychotic
@@ -2914,7 +2914,7 @@
         record_count: 96400
         license: Public Domain (FDA)
   - id: 266dd632-2244-5f64-b8d8-2f775ae119f9
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Olanzapine
     uri: rxnorm:153046
     content: 'Olanzapine - Second-Generation Antipsychotic
@@ -2991,7 +2991,7 @@
         record_count: 93564
         license: Public Domain (FDA)
   - id: 1b605ca3-5519-5da8-b42d-3fb71d1f87e9
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Quetiapine
     uri: rxnorm:1648647
     content: 'Quetiapine - Second-Generation Antipsychotic
@@ -3068,7 +3068,7 @@
         record_count: 183782
         license: Public Domain (FDA)
   - id: 4b1c9847-0293-5c64-9d5d-821923a977fb
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Aripiprazole
     uri: rxnorm:1602604
     content: 'Aripiprazole - Second-Generation Antipsychotic
@@ -3145,7 +3145,7 @@
         record_count: 56894
         license: Public Domain (FDA)
   - id: 0ffd7023-5533-5ef9-9e81-c66f63df7f73
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Ziprasidone
     uri: rxnorm:284548
     content: 'Ziprasidone - Second-Generation Antipsychotic
@@ -3222,7 +3222,7 @@
         record_count: 15335
         license: Public Domain (FDA)
   - id: e67c8e71-7564-584e-a22c-530429dcf64d
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Paliperidone
     uri: rxnorm:1650968
     content: 'Paliperidone - Second-Generation Antipsychotic
@@ -3299,7 +3299,7 @@
         record_count: 14676
         license: Public Domain (FDA)
   - id: 9217bd71-d358-52fc-ac58-adf6c4de0083
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Clozapine
     uri: rxnorm:104775
     content: 'Clozapine - Second-Generation Antipsychotic
@@ -3376,7 +3376,7 @@
         record_count: 92236
         license: Public Domain (FDA)
   - id: 1c17e3ce-519f-5bd5-96fd-5d8aa411e769
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Asenapine
     uri: rxnorm:1606490
     content: 'Asenapine - Second-Generation Antipsychotic
@@ -3453,7 +3453,7 @@
         record_count: 3968
         license: Public Domain (FDA)
   - id: 17c16dc4-73a3-5662-ac64-acb8d35db588
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Iloperidone
     uri: rxnorm:2714235
     content: 'Iloperidone - Second-Generation Antipsychotic
@@ -3530,7 +3530,7 @@
         record_count: 899
         license: Public Domain (FDA)
   - id: 7e13b249-3474-52fa-ac73-855f3fecf433
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lurasidone
     uri: rxnorm:1040036
     content: 'Lurasidone - Second-Generation Antipsychotic
@@ -3607,7 +3607,7 @@
         record_count: 6646
         license: Public Domain (FDA)
   - id: 01b0160f-2b01-59aa-a876-ab37b79a2174
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Brexpiprazole
     uri: rxnorm:1658325
     content: 'Brexpiprazole - Second-Generation Antipsychotic
@@ -3684,7 +3684,7 @@
         record_count: 3083
         license: Public Domain (FDA)
   - id: f4141453-38ee-5c51-b088-2aea0ede43cc
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Cariprazine
     uri: rxnorm:1741747
     content: 'Cariprazine - Second-Generation Antipsychotic
@@ -3761,7 +3761,7 @@
         record_count: 2265
         license: Public Domain (FDA)
   - id: 97c56f6b-15a7-530a-9af8-60c20fd48c71
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Pimavanserin
     uri: rxnorm:2049271
     content: 'Pimavanserin - Second-Generation Antipsychotic
@@ -3838,7 +3838,7 @@
         record_count: 310
         license: Public Domain (FDA)
   - id: 538ba41b-8c3b-5266-a021-85742a8d2186
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lumateperone
     uri: rxnorm:2275613
     content: 'Lumateperone - Second-Generation Antipsychotic
@@ -3915,7 +3915,7 @@
         record_count: 125
         license: Public Domain (FDA)
   - id: de7667ca-e4d7-5a5d-bdef-68beea836f5f
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Alprazolam
     uri: rxnorm:141927
     content: 'Alprazolam - Benzodiazepine
@@ -3992,7 +3992,7 @@
         record_count: 166270
         license: Public Domain (FDA)
   - id: 4ab979be-562c-5916-9298-11afc31bed95
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lorazepam
     uri: rxnorm:104719
     content: 'Lorazepam - Benzodiazepine
@@ -4068,7 +4068,7 @@
         record_count: 207917
         license: Public Domain (FDA)
   - id: 9c962ff4-ea1e-523e-b037-2089b6f56294
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Diazepam
     uri: rxnorm:2272622
     content: 'Diazepam - Benzodiazepine
@@ -4145,7 +4145,7 @@
         record_count: 130505
         license: Public Domain (FDA)
   - id: 88eefb55-bb40-5c01-aae1-f68dd9c8aba5
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Clonazepam
     uri: rxnorm:206157
     content: 'Clonazepam - Benzodiazepine
@@ -4222,7 +4222,7 @@
         record_count: 188473
         license: Public Domain (FDA)
   - id: ee39e94f-7cee-53dc-ad8f-3eced81d24d5
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Chlordiazepoxide
     uri: rxnorm:889616
     content: 'Chlordiazepoxide - Benzodiazepine
@@ -4299,7 +4299,7 @@
         record_count: 5310
         license: Public Domain (FDA)
   - id: 85a8d635-bffb-5c02-ad9e-4348dd53b345
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Oxazepam
     uri: rxnorm:198057
     content: 'Oxazepam - Benzodiazepine
@@ -4376,7 +4376,7 @@
         record_count: 34390
         license: Public Domain (FDA)
   - id: 6d866d58-3bdd-5433-8486-eb506661f575
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Temazepam
     uri: rxnorm:208463
     content: 'Temazepam - Benzodiazepine
@@ -4453,7 +4453,7 @@
         record_count: 51854
         license: Public Domain (FDA)
   - id: ffcf710c-a836-51de-99d8-3f0005893533
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Triazolam
     uri: rxnorm:208681
     content: 'Triazolam - Benzodiazepine
@@ -4530,7 +4530,7 @@
         record_count: 5645
         license: Public Domain (FDA)
   - id: b41f519c-310d-5f42-bf95-d6c31fccf53f
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Midazolam
     uri: rxnorm:2057964
     content: 'Midazolam - Benzodiazepine
@@ -4607,7 +4607,7 @@
         record_count: 37990
         license: Public Domain (FDA)
   - id: 00b210ee-aa31-5f2c-a7d7-c1cdd62de1c4
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Clorazepate
     uri: rxnorm:1149627
     content: 'Clorazepate - Benzodiazepine
@@ -4684,7 +4684,7 @@
         record_count: 5037
         license: Public Domain (FDA)
   - id: 87c7f0af-0955-5ee5-acd4-42487c0f31f8
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Buspirone
     uri: rxnorm:2714180
     content: 'Buspirone - Non-Benzodiazepine Anxiolytic
@@ -4757,7 +4757,7 @@
         record_count: 39459
         license: Public Domain (FDA)
   - id: 07b1f6c3-ac9b-5ede-886f-09094de9d9d2
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Hydroxyzine
     uri: rxnorm:995255
     content: 'Hydroxyzine - Non-Benzodiazepine Anxiolytic
@@ -4830,7 +4830,7 @@
         record_count: 79265
         license: Public Domain (FDA)
   - id: b4b3c7af-ea52-5879-b784-2a16ad080486
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Gabapentin
     uri: rxnorm:2398512
     content: 'Gabapentin - Non-Benzodiazepine Anxiolytic
@@ -4903,7 +4903,7 @@
         record_count: 413531
         license: Public Domain (FDA)
   - id: fb137bd2-a2a0-5e1b-b505-4611730caab1
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Pregabalin
     uri: rxnorm:1994389
     content: 'Pregabalin - Non-Benzodiazepine Anxiolytic
@@ -4976,7 +4976,7 @@
         record_count: 129494
         license: Public Domain (FDA)
   - id: 20ad80f2-7349-55b6-b570-f23109212970
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Zolpidem
     uri: rxnorm:828696
     content: 'Zolpidem - Sedative-Hypnotic
@@ -5053,7 +5053,7 @@
         record_count: 102165
         license: Public Domain (FDA)
   - id: e170ab55-9792-5a0d-8ba5-204a41b0e93d
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Eszopiclone
     uri: rxnorm:540407
     content: 'Eszopiclone - Sedative-Hypnotic
@@ -5130,7 +5130,7 @@
         record_count: 5747
         license: Public Domain (FDA)
   - id: 81801000-b864-54b2-a5e5-0a4631c04012
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Zaleplon
     uri: rxnorm:313761
     content: 'Zaleplon - Sedative-Hypnotic
@@ -5207,7 +5207,7 @@
         record_count: 2309
         license: Public Domain (FDA)
   - id: 13ff2ee5-3bb9-5733-a187-ff650523962a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Ramelteon
     uri: rxnorm:603162
     content: 'Ramelteon - Sedative-Hypnotic
@@ -5281,7 +5281,7 @@
         record_count: 1498
         license: Public Domain (FDA)
   - id: 40362677-0912-5214-ac6f-172ac4dd627c
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Suvorexant
     uri: rxnorm:1547110
     content: 'Suvorexant - Sedative-Hypnotic
@@ -5355,7 +5355,7 @@
         record_count: 767
         license: Public Domain (FDA)
   - id: d68045ff-fa4c-5986-9137-baf8187244aa
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lemborexant
     uri: rxnorm:2272414
     content: 'Lemborexant - Sedative-Hypnotic
@@ -5429,7 +5429,7 @@
         record_count: 760
         license: Public Domain (FDA)
   - id: 5b3f235f-d9b9-51ad-81ec-edec11930c8a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Daridorexant
     uri: rxnorm:2591508
     content: 'Daridorexant - Sedative-Hypnotic
@@ -5503,7 +5503,7 @@
         record_count: 93
         license: Public Domain (FDA)
   - id: 8a9a5924-b32e-51e3-b59e-c7337047b98d
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lithium
     uri: rxnorm:846386
     content: 'Lithium - Mood Stabilizer
@@ -5577,7 +5577,7 @@
         record_count: 63671
         license: Public Domain (FDA)
   - id: aafdf4d6-3085-5ded-9183-6fde22cf92cc
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Valproate
     uri: rxnorm:1099565
     content: 'Valproate - Mood Stabilizer
@@ -5654,7 +5654,7 @@
         record_count: 42565
         license: Public Domain (FDA)
   - id: 0d5be96d-db6d-5c19-81f9-3e8747480d51
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Divalproex
     uri: rxnorm:1099648
     content: 'Divalproex - Mood Stabilizer
@@ -5731,7 +5731,7 @@
         record_count: 18192
         license: Public Domain (FDA)
   - id: 9d81c01d-ee86-55ec-9f47-c6d2b7f8ac2c
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Carbamazepine
     uri: rxnorm:211817
     content: 'Carbamazepine - Mood Stabilizer
@@ -5808,7 +5808,7 @@
         record_count: 52390
         license: Public Domain (FDA)
   - id: 79fd704f-a3c2-548c-b0ce-1aa4be30bf45
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lamotrigine
     uri: rxnorm:2003797
     content: 'Lamotrigine - Mood Stabilizer
@@ -5885,7 +5885,7 @@
         record_count: 98420
         license: Public Domain (FDA)
   - id: fa592516-11c7-55b8-8b18-a0af0b27fa6e
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Oxcarbazepine
     uri: rxnorm:1365660
     content: 'Oxcarbazepine - Mood Stabilizer
@@ -5959,7 +5959,7 @@
         record_count: 20258
         license: Public Domain (FDA)
   - id: 66854b97-1b95-5244-9607-a49b0d0134c1
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Methylphenidate
     uri: rxnorm:1091135
     content: 'Methylphenidate - ADHD Medication
@@ -6036,7 +6036,7 @@
         record_count: 33075
         license: Public Domain (FDA)
   - id: 65107627-25ab-5cde-9128-2d51439a2c46
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Amphetamine
     uri: rxnorm:1009147
     content: 'Amphetamine - ADHD Medication
@@ -6113,7 +6113,7 @@
         record_count: 21147
         license: Public Domain (FDA)
   - id: 65107627-25ab-5cde-9128-2d51439a2c46
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Dextroamphetamine
     uri: rxnorm:1009147
     content: 'Dextroamphetamine - ADHD Medication
@@ -6190,7 +6190,7 @@
         record_count: 15493
         license: Public Domain (FDA)
   - id: 3836924b-4719-5064-9f4c-948c83b3c1e1
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lisdexamfetamine
     uri: rxnorm:1593858
     content: 'Lisdexamfetamine - ADHD Medication
@@ -6267,7 +6267,7 @@
         record_count: 11936
         license: Public Domain (FDA)
   - id: 6bdae820-3b2c-525b-9fc0-ed3736ca6ec9
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Atomoxetine
     uri: rxnorm:352317
     content: 'Atomoxetine - ADHD Medication
@@ -6344,7 +6344,7 @@
         record_count: 33226
         license: Public Domain (FDA)
   - id: a798ba95-c860-5fdd-97c6-e111d49e660b
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Guanfacine
     uri: rxnorm:862010
     content: 'Guanfacine - ADHD Medication
@@ -6418,7 +6418,7 @@
         record_count: 6935
         license: Public Domain (FDA)
   - id: ef9915b8-ae54-5ac8-8e8c-9e3c2296dac1
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Clonidine
     uri: rxnorm:1013934
     content: 'Clonidine - ADHD Medication
@@ -6491,7 +6491,7 @@
         record_count: 93633
         license: Public Domain (FDA)
   - id: 8afa7db8-cd93-5398-9d83-3d9f056e40fa
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Viloxazine
     uri: rxnorm:2536554
     content: 'Viloxazine - ADHD Medication
@@ -6568,7 +6568,7 @@
         record_count: 179
         license: Public Domain (FDA)
   - id: b501da41-954c-51b6-b04c-a0956df1184a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Donepezil
     uri: rxnorm:1858971
     content: 'Donepezil - Anti-Dementia Agent
@@ -6641,7 +6641,7 @@
         record_count: 34884
         license: Public Domain (FDA)
   - id: c0b69192-6089-59b2-abb5-e8abe6710f8a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Rivastigmine
     uri: rxnorm:1308571
     content: 'Rivastigmine - Anti-Dementia Agent
@@ -6714,7 +6714,7 @@
         record_count: 14445
         license: Public Domain (FDA)
   - id: c4263c73-42b2-57cc-9e90-fe93398b5e38
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Galantamine
     uri: rxnorm:602734
     content: 'Galantamine - Anti-Dementia Agent
@@ -6788,7 +6788,7 @@
         record_count: 11850
         license: Public Domain (FDA)
   - id: b501da41-954c-51b6-b04c-a0956df1184a
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Memantine
     uri: rxnorm:1858971
     content: 'Memantine - Anti-Dementia Agent
@@ -6862,7 +6862,7 @@
         record_count: 20906
         license: Public Domain (FDA)
   - id: b910eaac-150f-5a2b-9c8a-efb99939226e
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Aducanumab
     uri: rxnorm:2557229
     content: 'Aducanumab - Anti-Dementia Agent
@@ -6938,7 +6938,7 @@
         record_count: 177
         license: Public Domain (FDA)
   - id: 7ae2bae8-27b8-5ab8-be8d-feddabd8ad60
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Lecanemab
     uri: rxnorm:2626153
     content: 'Lecanemab - Anti-Dementia Agent
@@ -7017,7 +7017,7 @@
         record_count: 309
         license: Public Domain (FDA)
   - id: 9d922165-6d22-5985-8ff3-5e0df4706664
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Naltrexone
     uri: rxnorm:1483746
     content: 'Naltrexone - Substance Use Disorder Treatment
@@ -7090,7 +7090,7 @@
         record_count: 13134
         license: Public Domain (FDA)
   - id: 6e208751-ae95-529f-80cf-560d434852e8
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Acamprosate
     uri: rxnorm:835726
     content: 'Acamprosate - Substance Use Disorder Treatment
@@ -7164,7 +7164,7 @@
         record_count: 1325
         license: Public Domain (FDA)
   - id: 2c771a99-62c2-56b4-b93c-c25f6c910259
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Disulfiram
     uri: rxnorm:210628
     content: 'Disulfiram - Substance Use Disorder Treatment
@@ -7238,7 +7238,7 @@
         record_count: 1786
         license: Public Domain (FDA)
   - id: e4edbc2b-b200-5f5c-b580-99443910bfee
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Buprenorphine
     uri: rxnorm:1010603
     content: 'Buprenorphine - Substance Use Disorder Treatment
@@ -7311,7 +7311,7 @@
         record_count: 77734
         license: Public Domain (FDA)
   - id: d4aa05eb-a55e-5569-afe0-f14db867d50f
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Methadone
     uri: rxnorm:1990745
     content: 'Methadone - Substance Use Disorder Treatment
@@ -7388,7 +7388,7 @@
         record_count: 82034
         license: Public Domain (FDA)
   - id: e4edbc2b-b200-5f5c-b580-99443910bfee
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Naloxone
     uri: rxnorm:1010603
     content: 'Naloxone - Substance Use Disorder Treatment
@@ -7464,7 +7464,7 @@
         record_count: 29075
         license: Public Domain (FDA)
   - id: c76f56b3-5002-55e6-bb93-a05e3972ecff
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Varenicline
     uri: rxnorm:795735
     content: 'Varenicline - Substance Use Disorder Treatment
@@ -7538,7 +7538,7 @@
         record_count: 8925
         license: Public Domain (FDA)
   - id: 0ffe6209-9a14-520e-8978-35c01104a9dd
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Screening & Access
     uri: care:stage:1
     content: 'Screening & Access - Stage 1 (Intake)
@@ -7592,7 +7592,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: 3a3fe70a-0b1d-5666-b84c-39684fcfd9ec
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Comprehensive Assessment
     uri: care:stage:2
     content: 'Comprehensive Assessment - Stage 2 (Assessment)
@@ -7651,7 +7651,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: 4b6d8b73-2f58-5b65-9a21-58b87459f367
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Treatment Planning
     uri: care:stage:3
     content: 'Treatment Planning - Stage 3 (Treatment)
@@ -7710,7 +7710,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: 01185227-fcbf-5716-b66c-c81408659236
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Active Treatment
     uri: care:stage:4
     content: 'Active Treatment - Stage 4 (Treatment)
@@ -7774,7 +7774,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: d1c575de-8282-53e9-a968-10c82efd4018
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Transition / Step-Down
     uri: care:stage:5
     content: 'Transition / Step-Down - Stage 5 (Transition)
@@ -7828,7 +7828,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: 7a35697e-ae0a-540d-8a59-15bb08939b08
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Discharge Planning
     uri: care:stage:6
     content: 'Discharge Planning - Stage 6 (Discharge)
@@ -7887,7 +7887,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: 18b2c50c-4a71-5f1b-89f6-7344654fd28f
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Recovery Support & Monitoring
     uri: care:stage:7
     content: 'Recovery Support & Monitoring - Stage 7 (Recovery)
@@ -7941,7 +7941,7 @@
         fetched_at: '2025-11-28T12:23:55.394407Z'
         license: Public Domain (HHS)
   - id: f08afeaf-32d7-52bc-b49c-340f58fdae31
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Psychiatrist
     uri: care:role:md-do
     content: 'Psychiatrist (MD/DO) - Clinical
@@ -7989,7 +7989,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 06322ab8-7cfb-522c-9bd1-f91854016e18
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Psychiatric Nurse Practitioner
     uri: care:role:pmhnp
     content: 'Psychiatric Nurse Practitioner (PMHNP) - Clinical
@@ -8034,7 +8034,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 6ccf7648-44a4-50dc-b128-c66d9081a843
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Clinical Social Worker
     uri: care:role:lcsw
     content: 'Clinical Social Worker (LCSW) - Clinical
@@ -8083,7 +8083,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 1fc4aa85-1e18-5ae5-872e-9ccca40cd968
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Professional Counselor
     uri: care:role:lpc-lmhc
     content: 'Professional Counselor (LPC/LMHC) - Clinical
@@ -8127,7 +8127,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 0e2a2f7b-e7e9-576f-8534-00c52e569297
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Psychologist
     uri: care:role:phd-psyd
     content: 'Psychologist (PhD/PsyD) - Clinical
@@ -8171,7 +8171,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: b0ad09bd-9ffb-5817-8f64-650ff68c54f7
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Case Manager
     uri: care:role:bachelor's + training
     content: 'Case Manager (Bachelor''s + training) - Support
@@ -8221,7 +8221,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 1addf423-572c-5d40-af22-765dedd2413f
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Peer Support Specialist
     uri: care:role:lived experience + certification
     content: 'Peer Support Specialist (Lived experience + certification) - Support
@@ -8267,7 +8267,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 652599b9-0c75-5307-b546-b5d40fdcc138
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     name: Addiction Counselor
     uri: care:role:cadc-casac
     content: 'Addiction Counselor (CADC/CASAC) - Clinical
@@ -8312,7 +8312,7 @@
         fetched_at: '2025-11-28T12:23:55.394506Z'
         license: Public Domain (CMS)
   - id: 6886e83b-f66a-5d19-828c-5f32a110c876
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     category: crisis
     name: 988 Suicide and Crisis Lifeline
     uri: crisis:988
@@ -8377,7 +8377,7 @@
         fetched_at: '2025-11-28T12:23:55.394569Z'
         license: Public Domain (HHS)
   - id: 7de4812f-079d-5f38-9fef-52ba1ceba2f1
-    user_id: system
+    user_id: 9e7dc22b-13bb-5cea-8aee-f6b8e6dc962f
     category: crisis
     name: Crisis Text Line
     uri: crisis:text
