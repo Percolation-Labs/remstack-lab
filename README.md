@@ -31,6 +31,10 @@ choco install tesseract
 **Python Package:**
 
 ```bash
+# Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
 # Install remdb (note: quotes required for zsh)
 pip install "remdb[all]"
 
@@ -48,19 +52,22 @@ rem configure --yes --install
 git clone https://github.com/Percolation-Labs/remstack-lab.git
 cd remstack-lab
 
+# Activate your virtual environment (if not already active)
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
 # Start PostgreSQL with docker-compose
 curl -O https://gist.githubusercontent.com/percolating-sirsh/d117b673bc0edfdef1a5068ccd3cf3e5/raw/docker-compose.prebuilt.yml
 docker compose -f docker-compose.prebuilt.yml up -d postgres
 
 # Load quickstart dataset
-rem db load datasets/quickstart/sample_data.yaml --user-id demo-user
+rem db load datasets/quickstart/sample_data.yaml --user-id default
 
 # Optional: Set default LLM provider via environment variable
 # export LLM__DEFAULT_MODEL="openai:gpt-4.1-nano"  # Fast and cheap
 # export LLM__DEFAULT_MODEL="anthropic:claude-sonnet-4-5-20250929"  # High quality (default)
 
 # Ask questions
-rem ask --user-id demo-user "What documents exist in the system?"
+rem ask --user-id default "What documents exist in the system?"
 ```
 
 ## Repository Structure
@@ -174,6 +181,11 @@ We recommend cloning this repository and running REM commands from here:
 # Clone the lab
 git clone https://github.com/Percolation-Labs/remstack-lab.git
 cd remstack-lab
+
+# Set up virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install "remdb[all]"
 
 # Set up your environment
 export USER_ID="your-company-id"

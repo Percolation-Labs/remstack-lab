@@ -1,0 +1,1844 @@
+- table: resources
+  rows:
+  - id: 5c8d5dbd-66db-3e54-3b59-dce8463982cf
+    name: Fluoxetine
+    uri: drug:fluoxetine
+    content: '# Fluoxetine
+
+
+      **Classification:** Selective Serotonin Reuptake Inhibitor (SSRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased risk of suicidal thinking in young adults
+
+      - Serotonin syndrome risk with MAOIs and other serotonergic drugs
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (4,613 reports)
+
+      2. **DRUG INTERACTION** (4,265 reports)
+
+      3. **FATIGUE** (4,253 reports)
+
+      4. **NAUSEA** (4,228 reports)
+
+      5. **TOXICITY TO VARIOUS AGENTS** (4,155 reports)
+
+      6. **HEADACHE** (3,813 reports)
+
+      7. **COMPLETED SUICIDE** (3,621 reports)
+
+      8. **OFF LABEL USE** (3,315 reports)
+
+      9. **DIZZINESS** (3,166 reports)
+
+      10. **DIARRHOEA** (3,157 reports)
+
+
+      ### Additional Reported Events:
+
+      ANXIETY, DEPRESSION, DYSPNOEA, VOMITING, FALL, INTENTIONAL OVERDOSE, PAIN, MALAISE,
+      SUICIDAL IDEATION, SOMNOLENCE
+
+
+      ## Clinical Considerations
+
+      - Allow 4-6 weeks for full therapeutic effect
+
+      - Monitor for activation/agitation early in treatment
+
+      - Taper gradually to avoid discontinuation syndrome
+
+      - Common side effects: nausea, headache, sexual dysfunction, insomnia'
+    category: ssri
+    tags:
+    - drug
+    - ssri
+    - psychotropic
+    metadata:
+      drug_class: Selective Serotonin Reuptake Inhibitor (SSRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - DRUG INTERACTION
+      - FATIGUE
+      - NAUSEA
+      - TOXICITY TO VARIOUS AGENTS
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:fluoxetine
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 5546a663-3154-f118-2471-bcd1d4418447
+    name: Sertraline
+    uri: drug:sertraline
+    content: '# Sertraline
+
+
+      **Classification:** Selective Serotonin Reuptake Inhibitor (SSRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased risk of suicidal thinking in young adults
+
+      - Serotonin syndrome risk with MAOIs and other serotonergic drugs
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (8,325 reports)
+
+      2. **NAUSEA** (8,227 reports)
+
+      3. **FATIGUE** (7,431 reports)
+
+      4. **HEADACHE** (6,641 reports)
+
+      5. **DIARRHOEA** (6,514 reports)
+
+      6. **ANXIETY** (5,950 reports)
+
+      7. **DIZZINESS** (5,912 reports)
+
+      8. **OFF LABEL USE** (5,519 reports)
+
+      9. **DRUG INTERACTION** (5,483 reports)
+
+      10. **DEPRESSION** (5,293 reports)
+
+
+      ### Additional Reported Events:
+
+      VOMITING, DYSPNOEA, FALL, PAIN, INSOMNIA, TOXICITY TO VARIOUS AGENTS, MALAISE,
+      ASTHENIA, CONDITION AGGRAVATED, TREMOR
+
+
+      ## Clinical Considerations
+
+      - Allow 4-6 weeks for full therapeutic effect
+
+      - Monitor for activation/agitation early in treatment
+
+      - Taper gradually to avoid discontinuation syndrome
+
+      - Common side effects: nausea, headache, sexual dysfunction, insomnia'
+    category: ssri
+    tags:
+    - drug
+    - ssri
+    - psychotropic
+    metadata:
+      drug_class: Selective Serotonin Reuptake Inhibitor (SSRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - NAUSEA
+      - FATIGUE
+      - HEADACHE
+      - DIARRHOEA
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:sertraline
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 9f031ee1-d0bc-2482-2137-9e02eb36aa39
+    name: Paroxetine
+    uri: drug:paroxetine
+    content: '# Paroxetine
+
+
+      **Classification:** Selective Serotonin Reuptake Inhibitor (SSRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased risk of suicidal thinking in young adults
+
+      - Serotonin syndrome risk with MAOIs and other serotonergic drugs
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (3,274 reports)
+
+      2. **NAUSEA** (3,029 reports)
+
+      3. **FATIGUE** (2,947 reports)
+
+      4. **ANXIETY** (2,774 reports)
+
+      5. **DRUG INTERACTION** (2,633 reports)
+
+      6. **HEADACHE** (2,484 reports)
+
+      7. **DIZZINESS** (2,475 reports)
+
+      8. **DIARRHOEA** (2,339 reports)
+
+      9. **DEPRESSION** (2,226 reports)
+
+      10. **CONFUSIONAL STATE** (2,074 reports)
+
+
+      ### Additional Reported Events:
+
+      TOXICITY TO VARIOUS AGENTS, FALL, SUICIDAL IDEATION, VOMITING, INSOMNIA, DYSPNOEA,
+      SOMNOLENCE, TREMOR, OFF LABEL USE, ASTHENIA
+
+
+      ## Clinical Considerations
+
+      - Allow 4-6 weeks for full therapeutic effect
+
+      - Monitor for activation/agitation early in treatment
+
+      - Taper gradually to avoid discontinuation syndrome
+
+      - Common side effects: nausea, headache, sexual dysfunction, insomnia'
+    category: ssri
+    tags:
+    - drug
+    - ssri
+    - psychotropic
+    metadata:
+      drug_class: Selective Serotonin Reuptake Inhibitor (SSRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - NAUSEA
+      - FATIGUE
+      - ANXIETY
+      - DRUG INTERACTION
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:paroxetine
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 585a86de-c77c-db87-0422-8b51a8ed7f03
+    name: Citalopram
+    uri: drug:citalopram
+    content: '# Citalopram
+
+
+      **Classification:** Selective Serotonin Reuptake Inhibitor (SSRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased risk of suicidal thinking in young adults
+
+      - Serotonin syndrome risk with MAOIs and other serotonergic drugs
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **FATIGUE** (7,093 reports)
+
+      2. **NAUSEA** (6,167 reports)
+
+      3. **DRUG INEFFECTIVE** (5,607 reports)
+
+      4. **TOXICITY TO VARIOUS AGENTS** (5,404 reports)
+
+      5. **HEADACHE** (5,231 reports)
+
+      6. **DIARRHOEA** (4,919 reports)
+
+      7. **FALL** (4,607 reports)
+
+      8. **DIZZINESS** (4,570 reports)
+
+      9. **COMPLETED SUICIDE** (4,481 reports)
+
+      10. **PAIN** (4,409 reports)
+
+
+      ### Additional Reported Events:
+
+      OFF LABEL USE, DRUG INTERACTION, DYSPNOEA, ANXIETY, VOMITING, DEPRESSION, MALAISE,
+      ASTHENIA, DEATH, DRUG ABUSE
+
+
+      ## Clinical Considerations
+
+      - Allow 4-6 weeks for full therapeutic effect
+
+      - Monitor for activation/agitation early in treatment
+
+      - Taper gradually to avoid discontinuation syndrome
+
+      - Common side effects: nausea, headache, sexual dysfunction, insomnia'
+    category: ssri
+    tags:
+    - drug
+    - ssri
+    - psychotropic
+    metadata:
+      drug_class: Selective Serotonin Reuptake Inhibitor (SSRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - FATIGUE
+      - NAUSEA
+      - DRUG INEFFECTIVE
+      - TOXICITY TO VARIOUS AGENTS
+      - HEADACHE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:citalopram
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 4a749156-fb7b-d591-57a5-26afce0e6777
+    name: Escitalopram
+    uri: drug:escitalopram
+    content: '# Escitalopram
+
+
+      **Classification:** Selective Serotonin Reuptake Inhibitor (SSRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased risk of suicidal thinking in young adults
+
+      - Serotonin syndrome risk with MAOIs and other serotonergic drugs
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (4,665 reports)
+
+      2. **FATIGUE** (4,494 reports)
+
+      3. **NAUSEA** (4,312 reports)
+
+      4. **OFF LABEL USE** (3,684 reports)
+
+      5. **HEADACHE** (3,636 reports)
+
+      6. **DIARRHOEA** (3,608 reports)
+
+      7. **DRUG INTERACTION** (3,189 reports)
+
+      8. **DIZZINESS** (3,116 reports)
+
+      9. **FALL** (3,041 reports)
+
+      10. **ANXIETY** (3,029 reports)
+
+
+      ### Additional Reported Events:
+
+      DYSPNOEA, VOMITING, DEPRESSION, CONDITION AGGRAVATED, SOMNOLENCE, PAIN, ASTHENIA,
+      MALAISE, INSOMNIA, COMPLETED SUICIDE
+
+
+      ## Clinical Considerations
+
+      - Allow 4-6 weeks for full therapeutic effect
+
+      - Monitor for activation/agitation early in treatment
+
+      - Taper gradually to avoid discontinuation syndrome
+
+      - Common side effects: nausea, headache, sexual dysfunction, insomnia'
+    category: ssri
+    tags:
+    - drug
+    - ssri
+    - psychotropic
+    metadata:
+      drug_class: Selective Serotonin Reuptake Inhibitor (SSRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - FATIGUE
+      - NAUSEA
+      - OFF LABEL USE
+      - HEADACHE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:escitalopram
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 9cea464e-50e0-a655-fc82-41f812d31746
+    name: Venlafaxine
+    uri: drug:venlafaxine
+    content: '# Venlafaxine
+
+
+      **Classification:** Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (7,583 reports)
+
+      2. **NAUSEA** (5,415 reports)
+
+      3. **FATIGUE** (5,145 reports)
+
+      4. **HEADACHE** (4,730 reports)
+
+      5. **TOXICITY TO VARIOUS AGENTS** (4,665 reports)
+
+      6. **OFF LABEL USE** (4,359 reports)
+
+      7. **COMPLETED SUICIDE** (4,025 reports)
+
+      8. **DIZZINESS** (3,968 reports)
+
+      9. **DRUG INTERACTION** (3,799 reports)
+
+      10. **DEPRESSION** (3,507 reports)
+
+
+      ### Additional Reported Events:
+
+      DIARRHOEA, ANXIETY, PAIN, DYSPNOEA, VOMITING, FALL, OVERDOSE, MALAISE, INSOMNIA,
+      SOMNOLENCE
+
+
+      ## Clinical Considerations'
+    category: snri
+    tags:
+    - drug
+    - snri
+    - psychotropic
+    metadata:
+      drug_class: Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - NAUSEA
+      - FATIGUE
+      - HEADACHE
+      - TOXICITY TO VARIOUS AGENTS
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:venlafaxine
+        license: Public Domain (FDA)
+  - id: 41134704-cf28-f2c2-7f9a-8fc2578bc953
+    name: Duloxetine
+    uri: drug:duloxetine
+    content: '# Duloxetine
+
+
+      **Classification:** Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (5,447 reports)
+
+      2. **FATIGUE** (5,245 reports)
+
+      3. **NAUSEA** (5,217 reports)
+
+      4. **OFF LABEL USE** (4,023 reports)
+
+      5. **HEADACHE** (4,020 reports)
+
+      6. **PAIN** (4,016 reports)
+
+      7. **DIARRHOEA** (3,553 reports)
+
+      8. **DIZZINESS** (3,432 reports)
+
+      9. **FALL** (3,018 reports)
+
+      10. **VOMITING** (2,602 reports)
+
+
+      ### Additional Reported Events:
+
+      ARTHRALGIA, DEPRESSION, DYSPNOEA, TOXICITY TO VARIOUS AGENTS, ANXIETY, COMPLETED
+      SUICIDE, SOMNOLENCE, DRUG INTERACTION, ASTHENIA, INSOMNIA
+
+
+      ## Clinical Considerations'
+    category: snri
+    tags:
+    - drug
+    - snri
+    - psychotropic
+    metadata:
+      drug_class: Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - FATIGUE
+      - NAUSEA
+      - OFF LABEL USE
+      - HEADACHE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:duloxetine
+        license: Public Domain (FDA)
+  - id: 538f3e45-d368-e52f-5730-4928aed6937d
+    name: Alprazolam
+    uri: drug:alprazolam
+    content: '# Alprazolam
+
+
+      **Classification:** Benzodiazepine
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+      - FDA Black Box Warning: Risk of fatal respiratory depression when combined
+      with opioids
+
+      - Physical dependence develops with prolonged use
+
+      - Withdrawal can be life-threatening - taper gradually
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG ABUSE** (9,250 reports)
+
+      2. **TOXICITY TO VARIOUS AGENTS** (8,296 reports)
+
+      3. **COMPLETED SUICIDE** (7,609 reports)
+
+      4. **DRUG INEFFECTIVE** (7,420 reports)
+
+      5. **NAUSEA** (5,868 reports)
+
+      6. **FATIGUE** (5,532 reports)
+
+      7. **DEATH** (5,136 reports)
+
+      8. **HEADACHE** (4,685 reports)
+
+      9. **ANXIETY** (4,477 reports)
+
+      10. **PAIN** (4,458 reports)
+
+
+      ### Additional Reported Events:
+
+      DIARRHOEA, DYSPNOEA, OFF LABEL USE, FALL, DIZZINESS, VOMITING, CARDIAC ARREST,
+      SOMNOLENCE, OVERDOSE, MALAISE
+
+
+      ## Clinical Considerations
+
+      - Short-term use recommended (2-4 weeks)
+
+      - Avoid abrupt discontinuation
+
+      - Caution with respiratory conditions
+
+      - Avoid alcohol and other CNS depressants'
+    category: anxiolytic
+    tags:
+    - drug
+    - anxiolytic
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: Benzodiazepine
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG ABUSE
+      - TOXICITY TO VARIOUS AGENTS
+      - COMPLETED SUICIDE
+      - DRUG INEFFECTIVE
+      - NAUSEA
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:alprazolam
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: ebfdceb7-b902-37ca-4295-9102f4f01c6c
+    name: Lorazepam
+    uri: drug:lorazepam
+    content: '# Lorazepam
+
+
+      **Classification:** Benzodiazepine
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+      - FDA Black Box Warning: Risk of fatal respiratory depression when combined
+      with opioids
+
+      - Physical dependence develops with prolonged use
+
+      - Withdrawal can be life-threatening - taper gradually
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (9,178 reports)
+
+      2. **FATIGUE** (8,939 reports)
+
+      3. **NAUSEA** (8,790 reports)
+
+      4. **OFF LABEL USE** (7,438 reports)
+
+      5. **DIARRHOEA** (7,141 reports)
+
+      6. **DYSPNOEA** (6,242 reports)
+
+      7. **VOMITING** (5,943 reports)
+
+      8. **HEADACHE** (5,780 reports)
+
+      9. **ANXIETY** (5,661 reports)
+
+      10. **DIZZINESS** (5,644 reports)
+
+
+      ### Additional Reported Events:
+
+      PAIN, FALL, DEATH, ASTHENIA, DRUG INTERACTION, PYREXIA, CONFUSIONAL STATE, INSOMNIA,
+      MALAISE, PNEUMONIA
+
+
+      ## Clinical Considerations
+
+      - Short-term use recommended (2-4 weeks)
+
+      - Avoid abrupt discontinuation
+
+      - Caution with respiratory conditions
+
+      - Avoid alcohol and other CNS depressants'
+    category: anxiolytic
+    tags:
+    - drug
+    - anxiolytic
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: Benzodiazepine
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - FATIGUE
+      - NAUSEA
+      - OFF LABEL USE
+      - DIARRHOEA
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:lorazepam
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 61922eef-8b76-e703-9c0f-ccb4ef6b9891
+    name: Clonazepam
+    uri: drug:clonazepam
+    content: '# Clonazepam
+
+
+      **Classification:** Benzodiazepine
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+      - FDA Black Box Warning: Risk of fatal respiratory depression when combined
+      with opioids
+
+      - Physical dependence develops with prolonged use
+
+      - Withdrawal can be life-threatening - taper gradually
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (10,879 reports)
+
+      2. **FATIGUE** (7,302 reports)
+
+      3. **NAUSEA** (6,572 reports)
+
+      4. **HEADACHE** (6,126 reports)
+
+      5. **OFF LABEL USE** (6,021 reports)
+
+      6. **ANXIETY** (5,959 reports)
+
+      7. **PAIN** (5,691 reports)
+
+      8. **DEPRESSION** (5,608 reports)
+
+      9. **DYSPNOEA** (5,246 reports)
+
+      10. **TOXICITY TO VARIOUS AGENTS** (5,147 reports)
+
+
+      ### Additional Reported Events:
+
+      DIZZINESS, COMPLETED SUICIDE, FALL, DIARRHOEA, INSOMNIA, VOMITING, MALAISE,
+      SOMNOLENCE, DRUG INTERACTION, PNEUMONIA
+
+
+      ## Clinical Considerations
+
+      - Short-term use recommended (2-4 weeks)
+
+      - Avoid abrupt discontinuation
+
+      - Caution with respiratory conditions
+
+      - Avoid alcohol and other CNS depressants'
+    category: anxiolytic
+    tags:
+    - drug
+    - anxiolytic
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: Benzodiazepine
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - FATIGUE
+      - NAUSEA
+      - HEADACHE
+      - OFF LABEL USE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:clonazepam
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 68bf31c5-a5fc-1963-db2d-bb0c636f0ff3
+    name: Quetiapine
+    uri: drug:quetiapine
+    content: '# Quetiapine
+
+
+      **Classification:** Atypical Antipsychotic
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased mortality in elderly patients with dementia
+
+      - Monitor for metabolic syndrome, tardive dyskinesia
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **TOXICITY TO VARIOUS AGENTS** (9,363 reports)
+
+      2. **DRUG INEFFECTIVE** (8,230 reports)
+
+      3. **OFF LABEL USE** (7,087 reports)
+
+      4. **DRUG INTERACTION** (6,729 reports)
+
+      5. **COMPLETED SUICIDE** (6,684 reports)
+
+      6. **FATIGUE** (5,432 reports)
+
+      7. **NAUSEA** (4,608 reports)
+
+      8. **SOMNOLENCE** (4,541 reports)
+
+      9. **CONDITION AGGRAVATED** (4,516 reports)
+
+      10. **DRUG ABUSE** (4,472 reports)
+
+
+      ### Additional Reported Events:
+
+      PAIN, CONFUSIONAL STATE, SUICIDE ATTEMPT, OVERDOSE, VOMITING, DIZZINESS, INTENTIONAL
+      OVERDOSE, HEADACHE, DEPRESSION, ANXIETY
+
+
+      ## Clinical Considerations
+
+      - Monitor weight, glucose, lipids regularly
+
+      - Watch for extrapyramidal symptoms
+
+      - May cause sedation - take at bedtime if appropriate'
+    category: antipsychotic
+    tags:
+    - drug
+    - antipsychotic
+    - psychotropic
+    metadata:
+      drug_class: Atypical Antipsychotic
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - TOXICITY TO VARIOUS AGENTS
+      - DRUG INEFFECTIVE
+      - OFF LABEL USE
+      - DRUG INTERACTION
+      - COMPLETED SUICIDE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:quetiapine
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 71abe7b6-41ed-441c-584f-823b8f7d8806
+    name: Risperidone
+    uri: drug:risperidone
+    content: '# Risperidone
+
+
+      **Classification:** Atypical Antipsychotic
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased mortality in elderly patients with dementia
+
+      - Monitor for metabolic syndrome, tardive dyskinesia
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **GYNAECOMASTIA** (9,392 reports)
+
+      2. **OFF LABEL USE** (5,413 reports)
+
+      3. **DRUG INEFFECTIVE** (4,992 reports)
+
+      4. **WEIGHT INCREASED** (4,304 reports)
+
+      5. **DRUG INTERACTION** (3,207 reports)
+
+      6. **EMOTIONAL DISORDER** (2,872 reports)
+
+      7. **ABNORMAL WEIGHT GAIN** (2,867 reports)
+
+      8. **PRODUCT USE IN UNAPPROVED INDICATION** (2,858 reports)
+
+      9. **CONDITION AGGRAVATED** (2,250 reports)
+
+      10. **TOXICITY TO VARIOUS AGENTS** (2,214 reports)
+
+
+      ### Additional Reported Events:
+
+      SOMNOLENCE, EXTRAPYRAMIDAL DISORDER, EMOTIONAL DISTRESS, HYPERPROLACTINAEMIA,
+      SUICIDE ATTEMPT, ANXIETY, PSYCHOTIC DISORDER, SEDATION, OBESITY, FATIGUE
+
+
+      ## Clinical Considerations
+
+      - Monitor weight, glucose, lipids regularly
+
+      - Watch for extrapyramidal symptoms
+
+      - May cause sedation - take at bedtime if appropriate'
+    category: antipsychotic
+    tags:
+    - drug
+    - antipsychotic
+    - psychotropic
+    metadata:
+      drug_class: Atypical Antipsychotic
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - GYNAECOMASTIA
+      - OFF LABEL USE
+      - DRUG INEFFECTIVE
+      - WEIGHT INCREASED
+      - DRUG INTERACTION
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:risperidone
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: d8d764a0-6a01-bad0-4e1e-32be465a8d61
+    name: Olanzapine
+    uri: drug:olanzapine
+    content: '# Olanzapine
+
+
+      **Classification:** Atypical Antipsychotic
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased mortality in elderly patients with dementia
+
+      - Monitor for metabolic syndrome, tardive dyskinesia
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (5,648 reports)
+
+      2. **OFF LABEL USE** (3,813 reports)
+
+      3. **TOXICITY TO VARIOUS AGENTS** (3,750 reports)
+
+      4. **DRUG INTERACTION** (3,253 reports)
+
+      5. **WEIGHT INCREASED** (2,752 reports)
+
+      6. **SOMNOLENCE** (2,661 reports)
+
+      7. **NAUSEA** (2,493 reports)
+
+      8. **CONDITION AGGRAVATED** (2,250 reports)
+
+      9. **SUICIDE ATTEMPT** (2,194 reports)
+
+      10. **FATIGUE** (2,190 reports)
+
+
+      ### Additional Reported Events:
+
+      VOMITING, CONFUSIONAL STATE, OVERDOSE, NEUROLEPTIC MALIGNANT SYNDROME, ANXIETY,
+      DRUG ABUSE, COMPLETED SUICIDE, AGITATION, SEDATION, INTENTIONAL OVERDOSE
+
+
+      ## Clinical Considerations
+
+      - Monitor weight, glucose, lipids regularly
+
+      - Watch for extrapyramidal symptoms
+
+      - May cause sedation - take at bedtime if appropriate'
+    category: antipsychotic
+    tags:
+    - drug
+    - antipsychotic
+    - psychotropic
+    metadata:
+      drug_class: Atypical Antipsychotic
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - OFF LABEL USE
+      - TOXICITY TO VARIOUS AGENTS
+      - DRUG INTERACTION
+      - WEIGHT INCREASED
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:olanzapine
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 3a2427e6-8d96-aaa2-37b5-d46ba8b230fe
+    name: Aripiprazole
+    uri: drug:aripiprazole
+    content: '# Aripiprazole
+
+
+      **Classification:** Atypical Antipsychotic
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - FDA Black Box Warning: Increased mortality in elderly patients with dementia
+
+      - Monitor for metabolic syndrome, tardive dyskinesia
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (4,161 reports)
+
+      2. **OFF LABEL USE** (2,753 reports)
+
+      3. **PRODUCT USE IN UNAPPROVED INDICATION** (2,182 reports)
+
+      4. **DRUG INTERACTION** (2,106 reports)
+
+      5. **WEIGHT INCREASED** (2,058 reports)
+
+      6. **ANXIETY** (1,704 reports)
+
+      7. **CONDITION AGGRAVATED** (1,624 reports)
+
+      8. **SUICIDE ATTEMPT** (1,501 reports)
+
+      9. **FATIGUE** (1,449 reports)
+
+      10. **SUICIDAL IDEATION** (1,340 reports)
+
+
+      ### Additional Reported Events:
+
+      SCHIZOPHRENIA, TOXICITY TO VARIOUS AGENTS, SOMNOLENCE, NAUSEA, SEDATION, DEPRESSION,
+      PSYCHOTIC DISORDER, AKATHISIA, INSOMNIA, TREMOR
+
+
+      ## Clinical Considerations
+
+      - Monitor weight, glucose, lipids regularly
+
+      - Watch for extrapyramidal symptoms
+
+      - May cause sedation - take at bedtime if appropriate'
+    category: antipsychotic
+    tags:
+    - drug
+    - antipsychotic
+    - psychotropic
+    metadata:
+      drug_class: Atypical Antipsychotic
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - OFF LABEL USE
+      - PRODUCT USE IN UNAPPROVED INDICATION
+      - DRUG INTERACTION
+      - WEIGHT INCREASED
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:aripiprazole
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: ec94efa6-bb17-157b-d9ba-139d322c1307
+    name: Lithium
+    uri: drug:lithium
+    content: '# Lithium
+
+
+      **Classification:** Mood Stabilizer
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **TOXICITY TO VARIOUS AGENTS** (3,453 reports)
+
+      2. **DRUG INEFFECTIVE** (3,325 reports)
+
+      3. **TREMOR** (2,640 reports)
+
+      4. **DRUG INTERACTION** (2,617 reports)
+
+      5. **NAUSEA** (2,192 reports)
+
+      6. **OFF LABEL USE** (2,061 reports)
+
+      7. **WEIGHT INCREASED** (1,936 reports)
+
+      8. **FATIGUE** (1,797 reports)
+
+      9. **DEPRESSION** (1,746 reports)
+
+      10. **VOMITING** (1,731 reports)
+
+
+      ### Additional Reported Events:
+
+      INSOMNIA, ANXIETY, SOMNOLENCE, CONFUSIONAL STATE, DIZZINESS, SUICIDAL IDEATION,
+      DIARRHOEA, HEADACHE, MANIA, SUICIDE ATTEMPT
+
+
+      ## Clinical Considerations'
+    category: mood-stabilizer
+    tags:
+    - drug
+    - mood-stabilizer
+    - psychotropic
+    metadata:
+      drug_class: Mood Stabilizer
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - TOXICITY TO VARIOUS AGENTS
+      - DRUG INEFFECTIVE
+      - TREMOR
+      - DRUG INTERACTION
+      - NAUSEA
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:lithium
+        license: Public Domain (FDA)
+  - id: 02491d71-8401-f581-40d2-9879c859b810
+    name: Lamotrigine
+    uri: drug:lamotrigine
+    content: '# Lamotrigine
+
+
+      **Classification:** Mood Stabilizer / Anticonvulsant
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (6,312 reports)
+
+      2. **SEIZURE** (4,271 reports)
+
+      3. **TOXICITY TO VARIOUS AGENTS** (3,938 reports)
+
+      4. **DRUG INTERACTION** (3,230 reports)
+
+      5. **OFF LABEL USE** (3,165 reports)
+
+      6. **COMPLETED SUICIDE** (3,088 reports)
+
+      7. **DIZZINESS** (2,940 reports)
+
+      8. **NAUSEA** (2,931 reports)
+
+      9. **FATIGUE** (2,919 reports)
+
+      10. **RASH** (2,872 reports)
+
+
+      ### Additional Reported Events:
+
+      FOETAL EXPOSURE DURING PREGNANCY, HEADACHE, SOMNOLENCE, DEPRESSION, VOMITING,
+      CONDITION AGGRAVATED, ANXIETY, PYREXIA, EPILEPSY, FALL
+
+
+      ## Clinical Considerations'
+    category: mood-stabilizer
+    tags:
+    - drug
+    - mood-stabilizer
+    - psychotropic
+    metadata:
+      drug_class: Mood Stabilizer / Anticonvulsant
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - SEIZURE
+      - TOXICITY TO VARIOUS AGENTS
+      - DRUG INTERACTION
+      - OFF LABEL USE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:lamotrigine
+        license: Public Domain (FDA)
+  - id: 0c7bdeaa-483f-52a2-ebe6-31decc1a3439
+    name: Methylphenidate
+    uri: drug:methylphenidate
+    content: '# Methylphenidate
+
+
+      **Classification:** CNS Stimulant
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+      - FDA Black Box Warning: High potential for abuse
+
+      - Cardiovascular risks - monitor heart rate and blood pressure
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (3,161 reports)
+
+      2. **PRODUCT SUBSTITUTION ISSUE** (1,424 reports)
+
+      3. **FATIGUE** (1,251 reports)
+
+      4. **HEADACHE** (1,243 reports)
+
+      5. **ANXIETY** (1,232 reports)
+
+      6. **OFF LABEL USE** (1,153 reports)
+
+      7. **NAUSEA** (1,147 reports)
+
+      8. **TOXICITY TO VARIOUS AGENTS** (968 reports)
+
+      9. **DEPRESSION** (851 reports)
+
+      10. **INSOMNIA** (849 reports)
+
+
+      ### Additional Reported Events:
+
+      SOMNOLENCE, DIZZINESS, DISTURBANCE IN ATTENTION, VOMITING, CONDITION AGGRAVATED,
+      AGITATION, FEELING ABNORMAL, AGGRESSION, SUICIDAL IDEATION, DRUG ABUSE
+
+
+      ## Clinical Considerations'
+    category: stimulant
+    tags:
+    - drug
+    - stimulant
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: CNS Stimulant
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - PRODUCT SUBSTITUTION ISSUE
+      - FATIGUE
+      - HEADACHE
+      - ANXIETY
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:methylphenidate
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 316cf5a1-816c-91b9-c578-c69e142b4289
+    name: Lisdexamfetamine
+    uri: drug:lisdexamfetamine
+    content: '# Lisdexamfetamine
+
+
+      **Classification:** CNS Stimulant
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+      - FDA Black Box Warning: High potential for abuse
+
+      - Cardiovascular risks - monitor heart rate and blood pressure
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **INTENTIONAL OVERDOSE** (1,070 reports)
+
+      2. **INTENTIONAL SELF-INJURY** (1,009 reports)
+
+      3. **DRUG INEFFECTIVE** (835 reports)
+
+      4. **PRODUCT AVAILABILITY ISSUE** (478 reports)
+
+      5. **FATIGUE** (385 reports)
+
+      6. **HEADACHE** (371 reports)
+
+      7. **ANXIETY** (342 reports)
+
+      8. **INABILITY TO AFFORD MEDICATION** (330 reports)
+
+      9. **PRODUCT SUBSTITUTION ISSUE** (319 reports)
+
+      10. **OFF LABEL USE** (317 reports)
+
+
+      ### Additional Reported Events:
+
+      DEPRESSION, CONDITION AGGRAVATED, INSOMNIA, PRODUCT USE ISSUE, SUICIDAL IDEATION,
+      SOMNOLENCE, FEELING ABNORMAL, NAUSEA, INSURANCE ISSUE, WEIGHT DECREASED
+
+
+      ## Clinical Considerations'
+    category: stimulant
+    tags:
+    - drug
+    - stimulant
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: CNS Stimulant
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - INTENTIONAL OVERDOSE
+      - INTENTIONAL SELF-INJURY
+      - DRUG INEFFECTIVE
+      - PRODUCT AVAILABILITY ISSUE
+      - FATIGUE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:lisdexamfetamine
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: cb624c69-fc2e-5ae3-530d-0e95270defd0
+    name: Trazodone
+    uri: drug:trazodone
+    content: '# Trazodone
+
+
+      **Classification:** Serotonin Modulator
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (8,634 reports)
+
+      2. **NAUSEA** (8,020 reports)
+
+      3. **FATIGUE** (8,014 reports)
+
+      4. **HEADACHE** (6,551 reports)
+
+      5. **PAIN** (6,273 reports)
+
+      6. **DIARRHOEA** (5,887 reports)
+
+      7. **OFF LABEL USE** (5,678 reports)
+
+      8. **DYSPNOEA** (5,109 reports)
+
+      9. **DIZZINESS** (4,993 reports)
+
+      10. **INSOMNIA** (4,846 reports)
+
+
+      ### Additional Reported Events:
+
+      VOMITING, DEPRESSION, ANXIETY, FALL, ARTHRALGIA, COMPLETED SUICIDE, ASTHENIA,
+      PNEUMONIA, DEATH, TOXICITY TO VARIOUS AGENTS
+
+
+      ## Clinical Considerations'
+    category: antidepressant
+    tags:
+    - drug
+    - antidepressant
+    - psychotropic
+    metadata:
+      drug_class: Serotonin Modulator
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - NAUSEA
+      - FATIGUE
+      - HEADACHE
+      - PAIN
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:trazodone
+        license: Public Domain (FDA)
+  - id: 590f14ba-1049-05ed-2009-9b301f7497a3
+    name: Zolpidem
+    uri: drug:zolpidem
+    content: '# Zolpidem
+
+
+      **Classification:** Sedative-Hypnotic
+
+      **Therapeutic Area:** Psychiatry
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG INEFFECTIVE** (4,794 reports)
+
+      2. **COMPLETED SUICIDE** (4,307 reports)
+
+      3. **TOXICITY TO VARIOUS AGENTS** (3,900 reports)
+
+      4. **NAUSEA** (3,827 reports)
+
+      5. **FATIGUE** (3,710 reports)
+
+      6. **FALL** (2,997 reports)
+
+      7. **DIARRHOEA** (2,899 reports)
+
+      8. **HEADACHE** (2,828 reports)
+
+      9. **DRUG ABUSE** (2,823 reports)
+
+      10. **INSOMNIA** (2,741 reports)
+
+
+      ### Additional Reported Events:
+
+      PAIN, ANXIETY, VOMITING, DYSPNOEA, DIZZINESS, DEATH, SOMNOLENCE, OFF LABEL USE,
+      ASTHENIA, DRUG INTERACTION
+
+
+      ## Clinical Considerations'
+    category: hypnotic
+    tags:
+    - drug
+    - hypnotic
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: Sedative-Hypnotic
+      therapeutic_area: Psychiatry
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG INEFFECTIVE
+      - COMPLETED SUICIDE
+      - TOXICITY TO VARIOUS AGENTS
+      - NAUSEA
+      - FATIGUE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:zolpidem
+        license: Public Domain (FDA)
+  - id: d39ee3b2-2d53-2b3f-ea19-8b6ae4515d6e
+    name: Buprenorphine
+    uri: drug:buprenorphine
+    content: '# Buprenorphine
+
+
+      **Classification:** Opioid Partial Agonist
+
+      **Therapeutic Area:** Addiction Medicine
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - Psychotropic medication - CNS effects
+
+      - DEA Controlled Substance - potential for abuse/dependence
+
+      - FDA Black Box Warning: Risk of addiction, abuse, misuse, and fatal overdose
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **DRUG DEPENDENCE** (9,966 reports)
+
+      2. **OVERDOSE** (5,892 reports)
+
+      3. **PAIN** (3,611 reports)
+
+      4. **DRUG ABUSE** (2,845 reports)
+
+      5. **DEPENDENCE** (2,540 reports)
+
+      6. **DRUG WITHDRAWAL SYNDROME** (2,504 reports)
+
+      7. **EMOTIONAL DISTRESS** (2,456 reports)
+
+      8. **NAUSEA** (2,448 reports)
+
+      9. **DRUG INEFFECTIVE** (2,368 reports)
+
+      10. **DEATH** (2,273 reports)
+
+
+      ### Additional Reported Events:
+
+      FOETAL EXPOSURE DURING PREGNANCY, TOXICITY TO VARIOUS AGENTS, ANXIETY, DRUG
+      WITHDRAWAL SYNDROME NEONATAL, VOMITING, PRODUCT ADHESION ISSUE, MATERNAL EXPOSURE
+      DURING PREGNANCY, HEADACHE, DEPRESSION, OFF LABEL USE
+
+
+      ## Clinical Considerations'
+    category: opioid-treatment
+    tags:
+    - drug
+    - opioid-treatment
+    - psychotropic
+    - controlled-substance
+    metadata:
+      drug_class: Opioid Partial Agonist
+      therapeutic_area: Addiction Medicine
+      is_psychotropic: true
+      is_controlled: true
+      total_adverse_reports: 0
+      top_adverse_events:
+      - DRUG DEPENDENCE
+      - OVERDOSE
+      - PAIN
+      - DRUG ABUSE
+      - DEPENDENCE
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:buprenorphine
+        license: Public Domain (FDA)
+      has_boxed_warning: true
+  - id: 35e42f4c-17a8-488f-2e6c-696e1ab229cf
+    name: Naltrexone
+    uri: drug:naltrexone
+    content: '# Naltrexone
+
+
+      **Classification:** Opioid Antagonist
+
+      **Therapeutic Area:** Addiction Medicine
+
+      **Route:** Oral
+
+
+      ## Warnings and Precautions
+
+      - FDA Black Box Warning: Risk of addiction, abuse, misuse, and fatal overdose
+
+
+      ## Reported Adverse Events (FDA FAERS)
+
+      *Based on 0 total adverse event reports*
+
+
+      ### Most Commonly Reported:
+
+      1. **FATIGUE** (707 reports)
+
+      2. **NAUSEA** (691 reports)
+
+      3. **DRUG INEFFECTIVE** (662 reports)
+
+      4. **OFF LABEL USE** (530 reports)
+
+      5. **PAIN** (504 reports)
+
+      6. **HEADACHE** (493 reports)
+
+      7. **DIZZINESS** (367 reports)
+
+      8. **INSOMNIA** (366 reports)
+
+      9. **VOMITING** (363 reports)
+
+      10. **ANXIETY** (352 reports)
+
+
+      ### Additional Reported Events:
+
+      DIARRHOEA, FEELING ABNORMAL, MALAISE, DEPRESSION, DYSPNOEA, CONDITION AGGRAVATED,
+      ASTHENIA, DRUG INTERACTION, SOMNOLENCE, ARTHRALGIA
+
+
+      ## Clinical Considerations'
+    category: opioid-treatment
+    tags:
+    - drug
+    - opioid-treatment
+    metadata:
+      drug_class: Opioid Antagonist
+      therapeutic_area: Addiction Medicine
+      is_psychotropic: false
+      is_controlled: false
+      total_adverse_reports: 0
+      top_adverse_events:
+      - FATIGUE
+      - NAUSEA
+      - DRUG INEFFECTIVE
+      - OFF LABEL USE
+      - PAIN
+      sources:
+      - source_id: openfda_faers
+        source_name: openFDA FAERS
+        source_url: https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:naltrexone
+        license: Public Domain (FDA)
+      has_boxed_warning: true

@@ -1,13 +1,13 @@
 # Dataset Metadata
 # Version: 1.0.0
-# User ID: demo-user
+# User ID: default
 # Description: Quickstart dataset for learning REM with users, resources, moments, messages, files, and schemas
 # Updated: 2025-11-24
 
 - table: users
   rows:
   - id: 8e57a5c4-4d07-4650-a79b-c76eca6a31d6
-    user_id: demo-user
+    user_id: default
     name: Sarah Chen
     email: sarah.chen@acme.com
     role: engineer
@@ -18,7 +18,7 @@
       department: engineering
       location: San Francisco
   - id: b525fe5c-06f0-4550-9a83-ff2860533196
-    user_id: demo-user
+    user_id: default
     name: Mike Johnson
     email: mike.johnson@acme.com
     role: designer
@@ -29,7 +29,7 @@
       department: design
       location: New York
   - id: 7e1b238f-5678-4fd6-9047-ad77c1140cd2
-    user_id: demo-user
+    user_id: default
     name: Alex Kim
     email: alex.kim@acme.com
     role: engineer
@@ -42,7 +42,7 @@
 - table: resources
   rows:
   - id: 539b0185-56c5-4e9e-bb87-cd9e0031250f
-    user_id: bb55c781-f880-594a-82e5-5191f0b64be8
+    user_id: default
     name: API Design Document v2
     uri: s3://acme-docs/api-design-v2.md
     content: 'RESTful API design for the REM query system. Supports LOOKUP, FUZZY, SEARCH, SQL, and TRAVERSE query types.
@@ -96,7 +96,7 @@
       weight: 0.9
       properties: {}
   - id: dc072be7-4900-4542-87c7-c9131060bb1e
-    user_id: bb55c781-f880-594a-82e5-5191f0b64be8
+    user_id: default
     name: Q4 2024 Retrospective Notes
     uri: s3://acme-docs/q4-retro-2024.md
     content: 'Team reflection on Q4 achievements and challenges.
@@ -149,7 +149,7 @@
       weight: 1.0
       properties: {}
   - id: 06a133d0-daca-45f1-ba74-872a0cac7548
-    user_id: 679e6ccd-08ff-5cee-b0fc-7e9135fb8595
+    user_id: default
     name: Frontend Component Refactor
     uri: s3://acme-docs/frontend-refactor-notes.md
     content: 'Refactored authentication components to use new context API.
@@ -202,7 +202,7 @@
 - table: moments
   rows:
   - id: 285e4068-9f27-4f6d-a4c2-92c3f0f9434f
-    user_id: demo-user
+    user_id: default
     name: Q4 2024 Team Retrospective
     moment_type: meeting
     category: team-event
@@ -236,7 +236,7 @@
     source_resource_ids:
     - e47ac016-19d3-5a4c-811e-08dc20f259a5
   - id: 17bf43c3-3b28-4d82-a5c0-f98f7bddfeb1
-    user_id: demo-user
+    user_id: default
     name: API Design Review Session
     moment_type: meeting
     category: design-review
@@ -264,7 +264,7 @@
     source_resource_ids:
     - 06179554-0f2b-5548-a9c5-87d4cc576473
   - id: 581744b0-9eaf-4e1d-9361-8a4d293ba231
-    user_id: demo-user
+    user_id: default
     name: Frontend Pairing Session
     moment_type: coding-session
     category: development
@@ -296,7 +296,7 @@
 - table: messages
   rows:
   - id: 4daa7451-8ef2-49ac-983d-18146cfeab9c
-    user_id: bb55c781-f880-594a-82e5-5191f0b64be8
+    user_id: default
     content: Hey team, I just pushed the API design doc v2. Can someone review?
     message_type: user
     session_id: session_team_chat_001
@@ -304,7 +304,7 @@
     - request
     - review
   - id: dd956bfd-eb74-4327-8ec7-ff8d7839d919
-    user_id: 3c4bfc2a-33b2-566f-85f1-62be50fe58d6
+    user_id: default
     content: On it! Will take a look this afternoon.
     message_type: user
     session_id: session_team_chat_001
@@ -312,7 +312,7 @@
     - response
     - acknowledgment
   - id: 9a40d856-7916-4aad-b1aa-9c014f03e795
-    user_id: 679e6ccd-08ff-5cee-b0fc-7e9135fb8595
+    user_id: default
     content: Looks good Sarah! Just one question about the error handling strategy.
     message_type: user
     session_id: session_team_chat_001
@@ -320,7 +320,7 @@
     - response
     - question
   - id: cfe1a4be-75c4-4bcb-8130-9b75a27e1fd4
-    user_id: null
+    user_id: default
     content: 'I found 3 documents authored by Sarah Chen: API Design Document v2,
 
       Q4 2024 Retrospective Notes, and Frontend Architecture Guide.
@@ -334,7 +334,7 @@
 - table: files
   rows:
   - id: dda7e572-ce7b-41e7-b48d-5e883742e060
-    user_id: bb55c781-f880-594a-82e5-5191f0b64be8
+    user_id: default
     name: api-architecture-diagram.png
     uri: s3://acme-files/diagrams/api-architecture-diagram.png
     mime_type: image/png
@@ -344,7 +344,7 @@
     - diagram
     - architecture
   - id: 8d2fb76f-ef2e-4794-96aa-fcbe72c41f77
-    user_id: bb55c781-f880-594a-82e5-5191f0b64be8
+    user_id: default
     name: q4-retro-recording.mp4
     uri: s3://acme-files/recordings/q4-retro-2024.mp4
     mime_type: video/mp4
@@ -354,7 +354,7 @@
     - recording
     - retrospective
   - id: 87ceef8c-2c16-4235-b0da-209480a02ec5
-    user_id: 679e6ccd-08ff-5cee-b0fc-7e9135fb8595
+    user_id: default
     name: design-mockups.pdf
     uri: s3://acme-files/uploads/design-mockups.pdf
     mime_type: application/pdf
@@ -366,7 +366,7 @@
 - table: schemas
   rows:
   - id: a9bd3fb4-a44d-46d8-9ba9-0c11ecd470a6
-    user_id: demo-user
+    user_id: default
     name: REM Query Assistant
     content: '# REM Query Assistant
 
@@ -435,7 +435,7 @@
     - retrieval
     - conversational
   - id: 99633320-e705-4a10-b473-1d5b03f7978b
-    user_id: demo-user
+    user_id: default
     name: Document Analyzer
     content: '# Document Analyzer
 
@@ -513,7 +513,7 @@
     - extraction
     - nlp
   - id: 5c001775-d29d-42c0-9edd-7e6dd40d3c6e
-    user_id: demo-user
+    user_id: default
     name: Code Review Assistant
     content: '# Code Review Assistant
 
