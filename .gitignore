@@ -61,3 +61,4 @@ experiments/*/results/
 experiments/*/outputs/
 experiments/*/.cache/
 research/
+.kreuzberg
