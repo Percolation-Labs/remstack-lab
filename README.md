@@ -357,6 +357,86 @@ See [REM Data Model](https://github.com/Percolation-Labs/remstack/blob/main/rem/
 - **Documentation**: [rem/README.md](https://github.com/Percolation-Labs/remstack/blob/main/rem/README.md)
 - **REM Query Language**: [Query Guide](https://github.com/Percolation-Labs/remstack/blob/main/rem/src/rem/models/core/README.md)
 
+## Arize Phoenix Integration
+
+[Arize Phoenix](https://github.com/Arize-ai/phoenix) provides LLM observability and tracing. REM can send OpenTelemetry traces directly to Phoenix without requiring a separate OTEL collector.
+
+### Adding Phoenix to Docker Compose
+
+Edit your `docker-compose.prebuilt.yml` to add the Phoenix service and update the API configuration:
+
+**1. Add the Phoenix service** (after the `api` service):
+
+```yaml
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    container_name: rem-phoenix
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "6006:6006"   # Phoenix UI and HTTP OTLP collector
+      - "4317:4317"   # gRPC OTLP collector (optional)
+    environment:
+      - PHOENIX_SQL_DATABASE_URL=postgresql://rem:rem@postgres:5432/phoenix
+    networks:
+      - rem-network-test
+```
+
+**2. Update the `api` service** - change the OTEL settings from disabled to enabled:
+
+```yaml
+  api:
+    # ... existing config ...
+    environment:
+      # ... existing environment variables ...
+
+      # Change OTEL from disabled to enabled, pointing to Phoenix
+      OTEL__ENABLED: "true"                        # was "false"
+      OTEL__COLLECTOR_ENDPOINT: http://phoenix:6006
+      OTEL__PROTOCOL: http
+      OTEL__SERVICE_NAME: rem-api
+```
+
+**3. Create the Phoenix database** (one-time setup):
+
+```bash
+# Connect to postgres and create the phoenix database
+docker exec -it rem-postgres-test psql -U rem -d rem -c "CREATE DATABASE phoenix;"
+```
+
+### Environment Variables Reference
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `OTEL__ENABLED` | Enable OpenTelemetry instrumentation | `false` |
+| `OTEL__COLLECTOR_ENDPOINT` | OTLP endpoint (Phoenix HTTP: port 6006, gRPC: port 4317) | `http://localhost:4318` |
+| `OTEL__PROTOCOL` | Protocol to use (`http` or `grpc`) | `http` |
+| `OTEL__SERVICE_NAME` | Service name for traces | `rem-api` |
+| `OTEL__EXPORT_TIMEOUT` | Export timeout in milliseconds | `10000` |
+
+### Accessing Phoenix
+
+Once running, access the Phoenix UI at: `http://localhost:6006`
+
+Phoenix provides:
+
+- Real-time trace visualization
+- LLM call inspection (inputs, outputs, latency)
+- OpenInference semantic conventions for AI/ML traces
+- Experiment tracking and evaluation
+
+### Notes
+
+- Phoenix acts as an OTLP-compatible collector - no separate OpenTelemetry Collector needed
+- Traces are generated for Pydantic AI agent executions (not regular HTTP requests)
+- For cloud deployment, consider [Arize Phoenix Cloud](https://phoenix.arize.com/) for hosted observability
+
+**Sources:**
+
+- [Phoenix Docker Deployment](https://arize.com/docs/phoenix/self-hosting/deployment-options/docker)
+- [Phoenix OTEL Setup](https://arize.com/docs/phoenix/tracing/how-to-tracing/setup-tracing/setup-using-phoenix-otel)
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
