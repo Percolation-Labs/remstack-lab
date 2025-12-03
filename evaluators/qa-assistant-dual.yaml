@@ -1,0 +1,369 @@
+# QA Assistant Dual Evaluator
+# Evaluates BOTH the text response AND the metadata tool call
+# This is a dual evaluation pattern for comprehensive agent assessment
+
+title: QAAssistantDualEvaluator
+type: object
+description: |
+  # DUAL EVALUATOR: Text Response + Metadata Tool Call
+
+  You are THE JUDGE evaluating QA assistant responses. You must evaluate TWO ASPECTS:
+
+  ## ASPECT 1: Text Response Evaluation
+  Evaluate the natural language answer for:
+  - **Factual Accuracy**: Does the answer contain correct information?
+  - **Tone Appropriateness**: Is the tone suitable for the question type?
+  - **Completeness**: Does it address the question fully?
+  - **Clarity**: Is the answer clear and well-structured?
+
+  ## ASPECT 2: Metadata Tool Call Evaluation
+  Evaluate the `register_metadata` tool call for:
+  - **Tool Call Present**: Did the agent call register_metadata BEFORE responding?
+  - **Confidence Calibration**: Is the reported confidence appropriate for the answer?
+  - **Category Correctness**: Is the topic category accurate?
+  - **Tone Match**: Does reported tone match actual response tone?
+  - **Key Facts Quality**: Are the key_facts accurate and relevant?
+
+  ## Extraction Rules
+
+  1. **Tool Call Extraction**:
+     - Look for `register_metadata(...)` or tool_use blocks in the response
+     - Extract: confidence, risk_level, risk_reasoning, extra dict
+     - If no tool call: tool_call_present = false, penalize heavily
+
+  2. **Text Response Extraction**:
+     - Extract the natural language answer (after any tool calls)
+     - Assess against expected_output and ground truth
+
+  ## Scoring Guidelines
+
+  ### Factual Accuracy (0.0-1.0)
+  - 1.0: Completely accurate, matches ground truth
+  - 0.8: Minor omissions or phrasing differences, core facts correct
+  - 0.5: Partially correct, some errors
+  - 0.0: Major factual errors or completely wrong
+
+  ### Tone Score (0.0-1.0)
+  - 1.0: Perfect tone match for question type
+  - 0.8: Appropriate but could be better
+  - 0.5: Somewhat mismatched
+  - 0.0: Completely inappropriate tone
+
+  ### Confidence Calibration (0.0-1.0)
+  - 1.0: Confidence perfectly matches answer quality
+  - 0.8: Slightly over/under confident
+  - 0.5: Noticeably miscalibrated
+  - 0.0: Wildly miscalibrated (e.g., 0.99 on wrong answer)
+
+  ### Tool Call Compliance (0.0-1.0)
+  - 1.0: Tool called first, all fields present and correct
+  - 0.7: Tool called but some fields missing or after response
+  - 0.3: Tool called but mostly incorrect
+  - 0.0: No tool call at all
+
+  ## Overall Pass Criteria
+  Pass if ALL of:
+  - factual_accuracy_score >= 0.7
+  - tool_call_present = true
+  - confidence_calibration_score >= 0.5
+  - overall_score >= 0.6
+
+properties:
+  # === TEXT RESPONSE EVALUATION ===
+  extracted_answer:
+    type: string
+    description: The natural language answer extracted from agent response
+
+  factual_accuracy_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: |
+      How factually accurate is the answer (0.0-1.0)?
+      Compare against expected_output and ground truth.
+
+  factual_errors:
+    type: array
+    items:
+      type: string
+    description: List of factual errors found in the answer (empty if none)
+
+  tone_detected:
+    type: string
+    enum: [factual, educational, friendly_educational, inappropriate, unclear]
+    description: The tone detected in the actual response
+
+  tone_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: How appropriate is the tone for the question type?
+
+  completeness_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: How completely does the answer address the question?
+
+  clarity_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: How clear and well-structured is the answer?
+
+  # === METADATA TOOL CALL EVALUATION ===
+  tool_call_present:
+    type: boolean
+    description: Did the agent call register_metadata BEFORE responding?
+
+  tool_call_position:
+    type: string
+    enum: [first, after_response, not_found]
+    description: Where in the response was the tool call?
+
+  extracted_confidence:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: The confidence value extracted from the tool call (0 if not found)
+
+  confidence_calibration_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: |
+      How well calibrated is the reported confidence?
+      High confidence on correct answers = good
+      High confidence on wrong answers = bad
+      Low confidence on correct answers = underconfident
+
+  extracted_category:
+    type: string
+    description: Category extracted from tool call extra dict
+
+  category_correct:
+    type: boolean
+    description: Does extracted_category match expected category?
+
+  extracted_tone:
+    type: string
+    description: Tone extracted from tool call extra dict
+
+  tone_match:
+    type: boolean
+    description: Does extracted_tone match tone_detected in actual response?
+
+  extracted_key_facts:
+    type: array
+    items:
+      type: string
+    description: Key facts extracted from tool call
+
+  key_facts_accuracy:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: How accurate are the listed key facts?
+
+  tool_call_compliance_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: Overall score for tool call quality (presence + correctness)
+
+  # === COMBINED EVALUATION ===
+  text_response_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: |
+      Combined score for text response quality:
+      40% factual_accuracy + 25% completeness + 20% tone + 15% clarity
+
+  metadata_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: |
+      Combined score for metadata tool call quality:
+      40% tool_call_compliance + 30% confidence_calibration + 20% category_correct + 10% tone_match
+
+  overall_score:
+    type: number
+    minimum: 0.0
+    maximum: 1.0
+    description: |
+      Final weighted score:
+      60% text_response_score + 40% metadata_score
+      (Metadata heavily weighted to enforce tool call discipline)
+
+  pass:
+    type: boolean
+    description: |
+      Overall pass/fail:
+      Pass if factual_accuracy >= 0.7 AND tool_call_present AND overall_score >= 0.6
+
+  evaluation_notes:
+    type: string
+    description: Detailed notes on the evaluation, issues found, or praise
+
+  improvement_suggestions:
+    type: array
+    items:
+      type: string
+    description: Actionable suggestions to improve agent performance
+
+required:
+  - extracted_answer
+  - factual_accuracy_score
+  - tone_detected
+  - tone_score
+  - completeness_score
+  - clarity_score
+  - tool_call_present
+  - tool_call_position
+  - extracted_confidence
+  - confidence_calibration_score
+  - tool_call_compliance_score
+  - text_response_score
+  - metadata_score
+  - overall_score
+  - pass
+  - evaluation_notes
+
+json_schema_extra:
+  kind: evaluator
+  name: qa-assistant-dual
+  version: "1.0.0"
+  evaluation_type: dual
+  labels:
+    - Evaluator
+    - Dual
+    - QA
+    - Phoenix
+    - Tone
+    - Factuality
+    - Metadata
+
+# Phoenix evaluation config - maps output fields to Phoenix UI columns
+phoenix_config:
+  # Primary metrics for Phoenix UI
+  primary_score: overall_score
+  primary_label: pass
+
+  # Phoenix evaluations - each becomes a column in Phoenix UI
+  evaluations:
+    # Text response evaluations
+    - name: factual_accuracy
+      score_field: factual_accuracy_score
+      label_logic:
+        - threshold: 0.9
+          operator: ">="
+          label: "excellent"
+        - threshold: 0.7
+          operator: ">="
+          label: "good"
+        - threshold: 0.5
+          operator: ">="
+          label: "fair"
+        - threshold: 0.0
+          operator: ">="
+          label: "poor"
+
+    - name: tone
+      score_field: tone_score
+      label_field: tone_detected
+
+    - name: completeness
+      score_field: completeness_score
+      label_logic:
+        - threshold: 0.8
+          operator: ">="
+          label: "complete"
+        - threshold: 0.5
+          operator: ">="
+          label: "partial"
+        - threshold: 0.0
+          operator: ">="
+          label: "incomplete"
+
+    # Metadata tool call evaluations
+    - name: tool_call_present
+      label_field: tool_call_present
+      label_transform:
+        "true": "present"
+        "false": "missing"
+      score_logic:
+        "true": 1.0
+        "false": 0.0
+
+    - name: confidence_calibration
+      score_field: confidence_calibration_score
+      label_logic:
+        - threshold: 0.8
+          operator: ">="
+          label: "well_calibrated"
+        - threshold: 0.5
+          operator: ">="
+          label: "acceptable"
+        - threshold: 0.0
+          operator: ">="
+          label: "miscalibrated"
+
+    - name: tool_compliance
+      score_field: tool_call_compliance_score
+      label_logic:
+        - threshold: 0.8
+          operator: ">="
+          label: "excellent"
+        - threshold: 0.5
+          operator: ">="
+          label: "acceptable"
+        - threshold: 0.0
+          operator: ">="
+          label: "poor"
+
+    # Combined scores
+    - name: text_response
+      score_field: text_response_score
+      label_logic:
+        - threshold: 0.8
+          operator: ">="
+          label: "excellent"
+        - threshold: 0.6
+          operator: ">="
+          label: "good"
+        - threshold: 0.0
+          operator: ">="
+          label: "needs_work"
+
+    - name: metadata_quality
+      score_field: metadata_score
+      label_logic:
+        - threshold: 0.8
+          operator: ">="
+          label: "excellent"
+        - threshold: 0.6
+          operator: ">="
+          label: "good"
+        - threshold: 0.0
+          operator: ">="
+          label: "needs_work"
+
+    - name: pass
+      label_field: pass
+      label_transform:
+        "true": "pass"
+        "false": "fail"
+      score_logic:
+        "true": 1.0
+        "false": 0.0
+
+    # Overall score - used as the primary evaluation metric
+    - name: overall
+      score_field: overall_score
+      label_field: pass
+      label_transform:
+        "true": "pass"
+        "false": "fail"
+      explanation_field: evaluation_notes

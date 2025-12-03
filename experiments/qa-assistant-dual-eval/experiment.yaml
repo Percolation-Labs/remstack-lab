@@ -1,0 +1,73 @@
+name: qa-assistant-dual-eval
+description: 'Evaluate QA assistant accuracy and metadata compliance.
+
+
+  This experiment demonstrates DUAL EVALUATION:
+
+  1. Text Response: Factual accuracy, tone, completeness, clarity
+
+  2. Metadata Tool Call: Confidence calibration, category, tone match, key facts
+
+
+  The agent MUST call register_metadata() BEFORE responding to pass.
+
+  '
+agent_schema_ref:
+  name: qa_assistant
+  type: agent
+evaluator_schema_ref:
+  name: qa-assistant-dual
+  type: evaluator
+datasets:
+  ground_truth:
+    location: git
+    path: ground-truth/dataset.jsonl
+    format: jsonl
+    description: 'Ground truth Q&A dataset with expected outputs, tones, and confidence
+      levels.
+
+      Each example includes: id, input, expected_output, expected_tone, expected_confidence,
+      category, difficulty
+
+      '
+results:
+  location: git
+  base_path: results/
+  save_traces: false
+  save_metrics_summary: true
+  metrics_file: metrics.json
+status: completed
+tags:
+- qa
+- dual-eval
+- tone
+- factuality
+- metadata
+- phoenix
+metadata:
+  evaluation_dimensions:
+    text_response:
+    - factual_accuracy
+    - tone
+    - completeness
+    - clarity
+    metadata_tool_call:
+    - tool_call_present
+    - confidence_calibration
+    - category_correct
+    - tone_match
+    - key_facts_accuracy
+  scoring_weights:
+    text_response: 0.6
+    metadata: 0.4
+  categories:
+  - biology
+  - physics
+  - history
+  - medicine
+  - astronomy
+  - mathematics
+  - computer_science
+created_at: '2025-12-03T15:38:55.666164'
+updated_at: '2025-12-03T16:50:25.895703'
+last_run_at: '2025-12-03T16:50:25.895688'
