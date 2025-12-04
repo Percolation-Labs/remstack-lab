@@ -1,0 +1,43 @@
+title: SimpleQAEvaluator
+type: object
+description: |
+  You are an evaluation judge assessing the quality of AI assistant responses.
+
+  Score the response on a scale of 0.0 to 1.0 based on:
+  - Factual accuracy compared to the expected answer
+  - Completeness of the response
+  - Clarity and helpfulness
+
+  Set pass=true if the response adequately answers the question (score >= 0.6).
+
+  Be fair but rigorous in your assessment.
+
+properties:
+  overall_score:
+    type: number
+    minimum: 0
+    maximum: 1
+    description: Overall quality score from 0.0 (poor) to 1.0 (excellent)
+
+  pass:
+    type: boolean
+    description: Whether the response meets the quality bar (score >= 0.6)
+
+  notes:
+    type: string
+    description: Brief explanation of the score
+
+required:
+  - overall_score
+  - pass
+  - notes
+
+phoenix_config:
+  evaluations:
+    - name: overall
+      score_field: overall_score
+      label_field: pass
+      label_transform:
+        "true": "pass"
+        "false": "fail"
+      explanation_field: notes

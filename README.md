@@ -36,7 +36,7 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install remdb (note: quotes required for zsh)
-pip install "remdb[all]"
+pip install "remdb[all]" -U
 
 # Configure (interactive wizard)
 rem configure --install
@@ -359,83 +359,51 @@ See [REM Data Model](https://github.com/Percolation-Labs/remstack/blob/main/rem/
 
 ## Arize Phoenix Integration
 
-[Arize Phoenix](https://github.com/Arize-ai/phoenix) provides LLM observability and tracing. REM can send OpenTelemetry traces directly to Phoenix without requiring a separate OTEL collector.
+[Arize Phoenix](https://github.com/Arize-ai/phoenix) provides LLM observability, tracing, and experiment evaluation. Phoenix is **included by default** in `docker-compose.prebuilt.yml`.
 
-### Adding Phoenix to Docker Compose
-
-Edit your `docker-compose.prebuilt.yml` to add the Phoenix service and update the API configuration:
-
-**1. Add the Phoenix service** (after the `api` service):
-
-```yaml
-  phoenix:
-    image: arizephoenix/phoenix:latest
-    container_name: rem-phoenix
-    depends_on:
-      postgres:
-        condition: service_healthy
-    ports:
-      - "6006:6006"   # Phoenix UI and HTTP OTLP collector
-      - "4317:4317"   # gRPC OTLP collector (optional)
-    environment:
-      - PHOENIX_SQL_DATABASE_URL=postgresql://rem:rem@postgres:5432/phoenix
-    networks:
-      - rem-network-test
-```
-
-**2. Update the `api` service** - change the OTEL settings from disabled to enabled:
-
-```yaml
-  api:
-    # ... existing config ...
-    environment:
-      # ... existing environment variables ...
-
-      # Change OTEL from disabled to enabled, pointing to Phoenix
-      OTEL__ENABLED: "true"                        # was "false"
-      OTEL__COLLECTOR_ENDPOINT: http://phoenix:6006
-      OTEL__PROTOCOL: http
-      OTEL__SERVICE_NAME: rem-api
-```
-
-**3. Create the Phoenix database** (one-time setup):
+### Quick Start
 
 ```bash
-# Connect to postgres and create the phoenix database
-docker exec -it rem-postgres-test psql -U rem -d rem -c "CREATE DATABASE phoenix;"
+# Start everything (postgres, phoenix, api)
+docker compose -f docker-compose.prebuilt.yml up -d
+
+# Or start just Phoenix for experiments
+docker compose -f docker-compose.prebuilt.yml up -d phoenix
 ```
 
-### Environment Variables Reference
+Access the Phoenix UI at: http://localhost:6006
+
+### Running Experiments
+
+See [experiments/PHOENIX_QUICKSTART.md](experiments/PHOENIX_QUICKSTART.md) for the full guide.
+
+```bash
+# Set your OpenAI API key
+export OPENAI_API_KEY='your-key'
+
+# Run an experiment with gpt-4.1-mini (cheaper/faster)
+EVALUATOR_MODEL='openai:gpt-4.1-mini' \
+LLM__DEFAULT_MODEL='openai:gpt-4.1-mini' \
+rem experiments run my-experiment
+```
+
+### Environment Variables
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `OTEL__ENABLED` | Enable OpenTelemetry instrumentation | `false` |
-| `OTEL__COLLECTOR_ENDPOINT` | OTLP endpoint (Phoenix HTTP: port 6006, gRPC: port 4317) | `http://localhost:4318` |
-| `OTEL__PROTOCOL` | Protocol to use (`http` or `grpc`) | `http` |
-| `OTEL__SERVICE_NAME` | Service name for traces | `rem-api` |
-| `OTEL__EXPORT_TIMEOUT` | Export timeout in milliseconds | `10000` |
+| `EVALUATOR_MODEL` | LLM model for evaluations | `claude-sonnet-4-5-20250929` |
+| `LLM__DEFAULT_MODEL` | Default LLM for agents | `openai:gpt-4.1` |
+| `OTEL__ENABLED` | Enable OpenTelemetry tracing | `true` |
+| `OTEL__COLLECTOR_ENDPOINT` | Phoenix OTLP endpoint | `http://phoenix:6006` |
 
-### Accessing Phoenix
-
-Once running, access the Phoenix UI at: `http://localhost:6006`
-
-Phoenix provides:
+### Features
 
 - Real-time trace visualization
 - LLM call inspection (inputs, outputs, latency)
-- OpenInference semantic conventions for AI/ML traces
-- Experiment tracking and evaluation
+- Experiment tracking and comparison
+- LLM-as-Judge evaluations
 
-### Notes
-
-- Phoenix acts as an OTLP-compatible collector - no separate OpenTelemetry Collector needed
-- Traces are generated for Pydantic AI agent executions (not regular HTTP requests)
-- For cloud deployment, consider [Arize Phoenix Cloud](https://phoenix.arize.com/) for hosted observability
-
-**Sources:**
-
-- [Phoenix Docker Deployment](https://arize.com/docs/phoenix/self-hosting/deployment-options/docker)
-- [Phoenix OTEL Setup](https://arize.com/docs/phoenix/tracing/how-to-tracing/setup-tracing/setup-using-phoenix-otel)
+For cloud deployment, consider [Arize Phoenix Cloud](https://phoenix.arize.com/)
 
 ## License
 

@@ -1,0 +1,27 @@
+name: claude-code-e2e-test
+task: general
+description: End-to-end Phoenix evaluation test created by Claude Code
+agent_schema_ref:
+  name: qa_assistant
+  type: agent
+evaluator_schema_ref:
+  name: simple-qa
+  type: evaluator
+datasets:
+  ground_truth:
+    location: git
+    path: ground-truth/dataset.jsonl
+    format: jsonl
+    description: Ground truth Q&A dataset for evaluation
+results:
+  location: git
+  base_path: results/
+  save_traces: false
+  save_metrics_summary: true
+  metrics_file: metrics.json
+status: completed
+tags: []
+metadata: {}
+created_at: '2025-12-04T10:13:28.065687'
+updated_at: '2025-12-04T10:59:07.106039'
+last_run_at: '2025-12-04T10:59:07.106020'
