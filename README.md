@@ -16,58 +16,56 @@ Example datasets, experiments, and tutorials for [remdb](https://pypi.org/projec
 ```bash
 # macOS
 brew install tesseract
-
-# Ubuntu/Debian
-sudo apt-get update
-sudo apt-get install tesseract-ocr
-
-# Fedora/RHEL
-sudo dnf install tesseract
-
-# Windows (using Chocolatey)
-choco install tesseract
 ```
 
-**Python Package:**
+**Docker:**
 
-```bash
-# Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+Docker is required to run PostgreSQL. Make sure Docker is installed and running.
 
-# Install remdb (note: quotes required for zsh)
-pip install "remdb[all]" -U
-
-# Configure (interactive wizard)
-rem configure --install
-
-# Or non-interactive with defaults
-rem configure --yes --install
-```
-
-### Load Your First Dataset
+### Step 1: Start PostgreSQL
 
 ```bash
 # Clone this repository
 git clone https://github.com/Percolation-Labs/remstack-lab.git
 cd remstack-lab
 
-# Activate your virtual environment (if not already active)
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Start PostgreSQL with docker-compose
+# Download and start PostgreSQL (port 5051)
 curl -O https://gist.githubusercontent.com/percolating-sirsh/d117b673bc0edfdef1a5068ccd3cf3e5/raw/docker-compose.prebuilt.yml
 docker compose -f docker-compose.prebuilt.yml up -d postgres
 
+# To reset and start fresh (removes all data):
+# docker compose -f docker-compose.prebuilt.yml down -v
+```
+
+### Step 2: Install REM
+
+```bash
+# Create and activate a virtual environment
+# Use Python 3.11 or 3.12 matching your platform architecture (arm64/x86_64)
+# macOS ARM: /opt/homebrew/Cellar/python@3.12/*/bin/python3.12 -m venv .venv
+# macOS x86: /usr/local/bin/python3 -m venv .venv
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install remdb (note: quotes required for zsh)
+pip install "remdb[all]" -U
+
+# Configure and install database schema (non-interactive)
+rem configure --yes --install
+```
+
+### Step 3: Load Data and Query
+
+```bash
 # Load quickstart dataset
 rem db load datasets/quickstart/sample_data.yaml
+
+# Ask questions
+rem ask "What documents exist in the system?"
 
 # Optional: Set default LLM provider via environment variable
 # export LLM__DEFAULT_MODEL="openai:gpt-4.1-nano"  # Fast and cheap
 # export LLM__DEFAULT_MODEL="anthropic:claude-sonnet-4-5-20250929"  # High quality (default)
-
-# Ask questions
-rem ask "What documents exist in the system?"
 ```
 
 ## Repository Structure
@@ -180,10 +178,16 @@ We recommend cloning this repository and running REM commands from here:
 git clone https://github.com/Percolation-Labs/remstack-lab.git
 cd remstack-lab
 
+# Start PostgreSQL (if not already running)
+docker compose -f docker-compose.prebuilt.yml up -d postgres
+
 # Set up virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install "remdb[all]"
+
+# Initialize database
+rem configure --yes --install
 
 # Load multiple datasets
 rem db load datasets/quickstart/sample_data.yaml
