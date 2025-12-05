@@ -31,7 +31,7 @@ cd remstack-lab
 
 # Download and start PostgreSQL (port 5051)
 curl -O https://gist.githubusercontent.com/percolating-sirsh/d117b673bc0edfdef1a5068ccd3cf3e5/raw/docker-compose.prebuilt.yml
-docker compose -f docker-compose.prebuilt.yml up -d postgres
+docker compose -f docker-compose.prebuilt.yml up  
 
 # To reset and start fresh (removes all data):
 # docker compose -f docker-compose.prebuilt.yml down -v
@@ -62,6 +62,9 @@ rem db load datasets/quickstart/sample_data.yaml
 
 # Ask questions
 rem ask "What documents exist in the system?"
+
+# View traces in Phoenix UI
+# Open http://localhost:6006 to see LLM call traces and latency
 
 # Optional: Set default LLM provider via environment variable
 # export LLM__DEFAULT_MODEL="openai:gpt-4.1-nano"  # Fast and cheap
