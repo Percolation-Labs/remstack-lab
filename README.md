@@ -60,6 +60,10 @@ rem configure --yes --install
 # Load quickstart dataset
 rem db load datasets/quickstart/sample_data.yaml
 
+# Enable tracing to Phoenix (required for trace visibility)
+export OTEL__ENABLED=true
+export OTEL__COLLECTOR_ENDPOINT=http://localhost:6006
+
 # Ask questions
 rem ask "What documents exist in the system?"
 
