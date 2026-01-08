@@ -54,14 +54,42 @@ cbt-manual/
 
 ## How to Use
 
-### Load into REM
+### Load into REM Database
+
+Use `rem process ingest` to load wiki files into the `ontologies` table:
 
 ```bash
-# Load the wiki (excluding raw chunks)
-rem db load wiki/cbt-manual/ --format wiki --exclude "chunks/*"
+# Navigate to remstack-lab directory
+cd /path/to/remstack-lab
 
-# Verify
-rem ask "What modules are in the CBT manual?"
+# Load wiki into ontologies table (PUBLIC by default)
+# Uses the remstack/rem project for the rem CLI
+POSTGRES__CONNECTION_STRING="postgresql://rem:rem@localhost:5050/rem" \
+  uv run --project /path/to/remstack/rem \
+  rem process ingest wiki/cbt-manual/ --table ontologies --pattern "**/*.md"
+
+# Dry run to preview what would be loaded
+POSTGRES__CONNECTION_STRING="postgresql://rem:rem@localhost:5050/rem" \
+  uv run --project /path/to/remstack/rem \
+  rem process ingest wiki/cbt-manual/ --table ontologies --pattern "**/*.md" --dry-run
+```
+
+**Key Points:**
+- Data is PUBLIC by default (tenant_id="public") - no user-id needed
+- The `--table ontologies` flag writes directly to the ontologies table
+- Entity keys are derived from filenames (e.g., `automatic-thoughts.md` → `automatic-thoughts`)
+- Embeddings are generated automatically for semantic search
+
+### Verify Loading
+
+```sql
+-- Check loaded ontologies
+SELECT name, LEFT(content, 80) as preview FROM ontologies
+WHERE tenant_id='public' ORDER BY name;
+
+-- Check KV store for LOOKUP access
+SELECT entity_key, entity_type FROM kv_store
+WHERE entity_type='ontologies' ORDER BY entity_key;
 ```
 
 ### Navigation Methods
@@ -127,7 +155,10 @@ Manually create concept pages in `wiki/my-wiki/concepts/` to extract and cross-r
 ### Step 4: Load into REM
 
 ```bash
-rem db load wiki/my-wiki/ --format wiki
+# Load wiki into ontologies table
+POSTGRES__CONNECTION_STRING="postgresql://rem:rem@localhost:5050/rem" \
+  uv run --project /path/to/remstack/rem \
+  rem process ingest wiki/my-wiki/ --table ontologies --pattern "**/*.md"
 ```
 
 ## Frontmatter Schema
