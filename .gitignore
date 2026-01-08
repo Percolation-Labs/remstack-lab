@@ -64,3 +64,6 @@ experiments/*/.cache/
 research/
 .kreuzberg
 docker-compose.prebuilt.yml
+
+# Wiki chunks (generated, not tracked)
+wiki/*/chunks/
