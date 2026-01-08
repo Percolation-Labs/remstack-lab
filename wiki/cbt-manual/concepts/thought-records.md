@@ -42,6 +42,6 @@ THOUGHT ——— FEELING
 
 ## See Also
 
-- [[automatic-thoughts]] - What we're capturing
-- [[socratic-questioning]] - Technique for examination
-- [[cbt-homework]] - Assigning as between-session work
+- [Automatic Thoughts](./automatic-thoughts.md) - What we're capturing
+- [Socratic Questioning](./socratic-questioning.md) - Technique for examination
+- [Module 8: Homework](../modules/cbt-homework.md) - Assigning as between-session work

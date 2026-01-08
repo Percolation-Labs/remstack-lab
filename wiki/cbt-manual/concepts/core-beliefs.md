@@ -43,5 +43,5 @@ To identify core beliefs, keep asking "What does that mean about you?" until rea
 
 ## See Also
 
-- [[automatic-thoughts]] - Surface-level thoughts
-- [[cbt-case-conceptualization]] - Using beliefs in treatment planning
+- [Automatic Thoughts](./automatic-thoughts.md) - Surface-level thoughts
+- [Module 4: Case Conceptualization](../modules/cbt-case-conceptualization.md) - Using beliefs in treatment planning

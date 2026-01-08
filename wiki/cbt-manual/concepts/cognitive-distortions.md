@@ -35,6 +35,6 @@ Cognitive distortions are systematic errors in thinking that maintain negative a
 
 ## See Also
 
-- [[automatic-thoughts]] - The thoughts containing distortions
-- [[thought-records]] - Tool for documenting distortions
-- [[challenging-maladaptive-thoughts]] - How to challenge them
+- [Automatic Thoughts](./automatic-thoughts.md) - The thoughts containing distortions
+- [Thought Records](./thought-records.md) - Tool for documenting distortions
+- [Module 10: Challenging Maladaptive Thoughts](../modules/challenging-maladaptive-thoughts.md) - How to challenge them

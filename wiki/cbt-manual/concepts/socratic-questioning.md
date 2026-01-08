@@ -45,5 +45,5 @@ Socratic questioning uses guided discovery through questions to help patients ex
 
 ## See Also
 
-- [[thought-records]] - Where questioning is applied
-- [[challenging-maladaptive-thoughts]] - Full module
+- [Thought Records](./thought-records.md) - Where questioning is applied
+- [Module 10: Challenging Maladaptive Thoughts](../modules/challenging-maladaptive-thoughts.md) - Full module

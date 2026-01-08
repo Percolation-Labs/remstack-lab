@@ -46,35 +46,33 @@ results = rem.search("how to challenge negative thinking")
 
 ## Essential Psychotherapy Skills
 
-- [[brief-cbt-introduction|Module 1: Introduction to Brief Cognitive Behavioral Therapy (CBT)]]
-- [[cbt-supervision|Module 2: Using Supervision]]
-- [[cbt-nonspecific-factors|Module 3: Nonspecific Factors in Brief CBT]]
-- [[cbt-case-conceptualization|Module 4: Case Conceptualization and Treatment Planning]]
+- [Module 1: Introduction to Brief CBT](./modules/brief-cbt-introduction.md)
+- [Module 2: Using Supervision](./modules/cbt-supervision.md)
+- [Module 3: Nonspecific Factors in Brief CBT](./modules/cbt-nonspecific-factors.md)
+- [Module 4: Case Conceptualization and Treatment Planning](./modules/cbt-case-conceptualization.md)
 
 ## Essential CBT Skills
 
-- [[cbt-patient-orientation|Module 5: Orienting the Patient to Brief CBT]]
-- [[cbt-goal-setting|Module 6: Goal Setting]]
-- [[cbt-agenda-setting|Module 7: Agenda Setting]]
-- [[cbt-homework|Module 8: Homework]]
-- [[identifying-maladaptive-thoughts|Module 9: Identifying Maladaptive Thoughts and Beliefs]]
-- [[challenging-maladaptive-thoughts|Module 10: Challenging Maladaptive Thoughts and Beliefs]]
-- [[cbt-behavioral-activation|Module 11: Behavioral Activation]]
-- [[cbt-problem-solving|Module 12: Problem Solving]]
-- [[cbt-relaxation|Module 13: Relaxation]]
-- [[cbt-ending-treatment|Module 14: Ending Treatment and Maintaining Changes]]
+- [Module 5: Orienting the Patient to Brief CBT](./modules/cbt-patient-orientation.md)
+- [Module 6: Goal Setting](./modules/cbt-goal-setting.md)
+- [Module 7: Agenda Setting](./modules/cbt-agenda-setting.md)
+- [Module 8: Homework](./modules/cbt-homework.md)
+- [Module 9: Identifying Maladaptive Thoughts and Beliefs](./modules/identifying-maladaptive-thoughts.md)
+- [Module 10: Challenging Maladaptive Thoughts and Beliefs](./modules/challenging-maladaptive-thoughts.md)
+- [Module 11: Behavioral Activation](./modules/cbt-behavioral-activation.md)
+- [Module 12: Problem Solving](./modules/cbt-problem-solving.md)
+- [Module 13: Relaxation](./modules/cbt-relaxation.md)
+- [Module 14: Ending Treatment and Maintaining Changes](./modules/cbt-ending-treatment.md)
 
 ## Key Concepts
 
-- [[automatic-thoughts]] - Spontaneous evaluative thoughts
-- [[cognitive-distortions]] - Systematic thinking errors
-- [[core-beliefs]] - Deep beliefs about self and world
-- [[thought-records]] - Structured worksheets for cognitive work
-- [[socratic-questioning]] - Guided discovery technique
-- [[behavioral-activation]] - Activity-based mood improvement
+- [Automatic Thoughts](./concepts/automatic-thoughts.md) - Spontaneous evaluative thoughts
+- [Cognitive Distortions](./concepts/cognitive-distortions.md) - Systematic thinking errors
+- [Core Beliefs](./concepts/core-beliefs.md) - Deep beliefs about self and world
+- [Thought Records](./concepts/thought-records.md) - Structured worksheets for cognitive work
+- [Socratic Questioning](./concepts/socratic-questioning.md) - Guided discovery technique
+- [Behavioral Activation](./concepts/behavioral-activation.md) - Activity-based mood improvement
 
-## References & Appendices
+## References
 
-- [[cbt-references|References]]
-- [[cbt-patient-handouts|Patient Handouts]]
-- [[cbt-treatment-outlines|Sample Treatment Outlines]]
+- [Suggested Readings](./references/cbt-suggested-readings.md)

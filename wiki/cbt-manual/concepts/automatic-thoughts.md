@@ -46,6 +46,7 @@ Ask: "What was going through your mind just then?"
 
 ## See Also
 
-- [[cognitive-distortions]] - Patterns in maladaptive thoughts
-- [[thought-records]] - Tool for capturing thoughts
-- [[identifying-maladaptive-thoughts]] - Full module
+- [Cognitive Distortions](./cognitive-distortions.md) - Patterns in maladaptive thoughts
+- [Thought Records](./thought-records.md) - Tool for capturing thoughts
+- [Core Beliefs](./core-beliefs.md) - Deeper cognitive structures
+- [Module 9: Identifying Maladaptive Thoughts](../modules/identifying-maladaptive-thoughts.md) - Full module

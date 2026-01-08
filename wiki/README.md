@@ -91,15 +91,15 @@ children = rem.traverse("cbt-essential-skills", relation="children")
 related = rem.traverse("automatic-thoughts", relation="related")
 ```
 
-### Wiki Link Syntax
+### Link Syntax
 
-Pages use wiki-style links:
+Pages use standard markdown links with relative paths:
 
 ```markdown
-See [[automatic-thoughts|Automatic Thoughts]] for details.
+See [Automatic Thoughts](./concepts/automatic-thoughts.md) for details.
 ```
 
-Format: `[[entity-key|Display Text]]`
+Format: `[Display Text](./relative/path.md)`
 
 ## Generating New Wikis
 

@@ -43,5 +43,6 @@ Low Mood → Decreased Activity → Fewer Rewards → Lower Mood → More Avoida
 
 ## See Also
 
-- [[cbt-problem-solving]] - For addressing barriers
-- [[cbt-homework]] - Assigning activity monitoring
+- [Module 12: Problem Solving](../modules/cbt-problem-solving.md) - For addressing barriers
+- [Module 8: Homework](../modules/cbt-homework.md) - Assigning activity monitoring
+- [Module 11: Behavioral Activation](../modules/cbt-behavioral-activation.md) - Full module
